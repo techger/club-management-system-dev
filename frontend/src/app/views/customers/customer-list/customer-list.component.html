@@ -1,0 +1,129 @@
+<div class="breadcrumb">
+  <h1>顧客一覧</h1>
+</div>
+<div class="separator-breadcrumb border-top"></div>
+
+<div class="row">
+  <div class="col-md-2 mb-4">
+    <button class="btn btn-rounded btn-primary">
+      <a routerLink="./register-customer" class="text-white"><i class="i-Add text-20"></i> 新規顧客登録</a>
+    </button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card mb-4">
+      <p-table #dt [columns]="columns" [value]="customers"
+               [paginator]="true" [rows]="30"
+               [resizableColumns]="true">
+        <ng-template pTemplate="caption">
+          <div style="text-align: right">
+            <i class="i-Magnifi-Glass1" style="margin:4px 4px 0 0"></i>
+            <input type="text" pInputText size="50" placeholder="検索"
+                   (input)="dt.filterGlobal($event.target.value, 'contains')" style="width:auto">
+          </div>
+        </ng-template>
+        <ng-template pTemplate="colgroup" let-columns>
+          <colgroup>
+            <col *ngFor="let col of columns">
+          </colgroup>
+        </ng-template>
+        <ng-template pTemplate="header" let-columns>
+          <tr>
+            <th *ngFor="let col of columns" [pSortableColumn]="col.field" pResizableColumn>
+              {{col.header}}
+            </th>
+            <th style="width:4em"></th>
+          </tr>
+          <tr>
+            <th *ngFor="let col of columns" [ngSwitch]="col.field">
+              <input *ngSwitchCase="'name'" pInputText type="text"
+                     (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
+              <input *ngSwitchCase="'company'" pInputText type="text"
+                     (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
+              <input *ngSwitchCase="'birthday'" pInputText type="text"
+                     (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
+              <input *ngSwitchCase="'phone'" pInputText type="text"
+                     (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
+              <input *ngSwitchCase="'email'" pInputText type="text"
+                     (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
+            </th>
+            <th></th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData let-columns="columns">
+          <tr [pSelectableRow]="rowData">
+            <td *ngFor="let col of columns" class="ui-resizable-column">
+              {{rowData[col.field]}}
+            </td>
+            <td>
+              <button class="btn btn-sm btn-icon" (click)="goToCustomerDetails(rowData)">
+                <i class="i-Magnifi-Glass1"></i>
+              </button>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </div>
+</div>
+
+
+<!--<input-->
+<!--type='text'-->
+<!--style='padding:8px;margin:15px auto;width:30%;'-->
+<!--placeholder='お名前を検索'-->
+<!--(keyup)='nameFilter($event)'-->
+<!--/>-->
+<!--<input-->
+<!--type='text'-->
+<!--style='padding:8px;margin:15px auto;width:30%;'-->
+<!--placeholder='会社名を検索'-->
+<!--(keyup)='companyFilter($event)'-->
+<!--/>-->
+<!--<ngx-datatable #customerListDataTable-->
+<!--class="material fullscreen"-->
+<!--[columnMode]="'flex'"-->
+<!--[headerHeight]="50"-->
+<!--[rowHeight]="40"-->
+<!--[rows]="customers"-->
+<!--&gt;-->
+<!--<ngx-datatable-row-detail [rowHeight]="100" #detailRow (toggle)="onDetailToggle($event)">-->
+<!--<ng-template let-row="row" let-expanded="expanded" ngx-datatable-row-detail-template>-->
+<!--<div style="padding-left:35px">-->
+<!--<div>住所: {{row.address}}</div>-->
+<!--<div>会社: {{row.company}}</div>-->
+<!--</div>-->
+<!--</ng-template>-->
+<!--</ngx-datatable-row-detail>-->
+<!--<ngx-datatable-column-->
+<!--[width]="50"-->
+<!--[resizeable]="false"-->
+<!--[sortable]="false"-->
+<!--[draggable]="false"-->
+<!--[canAutoResize]="false">-->
+<!--<ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>-->
+<!--<a-->
+<!--href="javascript:void(0)"-->
+<!--[class.datatable-icon-right]="!expanded"-->
+<!--[class.datatable-icon-down]="expanded"-->
+<!--title="Expand/Collapse Row"-->
+<!--(click)="toggleExpandRow(row)">-->
+<!--</a>-->
+<!--</ng-template>-->
+<!--</ngx-datatable-column>-->
+<!--<ngx-datatable-column name="name" [flexGrow]="1">-->
+<!--<ng-template let-column="column" ngx-datatable-header-template>-->
+<!--名前-->
+<!--</ng-template>-->
+<!--</ngx-datatable-column>-->
+<!--<ngx-datatable-column name="company" [flexGrow]="1">-->
+<!--<ng-template let-column="column" ngx-datatable-header-template>-->
+<!--会社-->
+<!--</ng-template>-->
+<!--</ngx-datatable-column>-->
+<!--<ngx-datatable-column name="phone" [flexGrow]="1"></ngx-datatable-column>-->
+<!--<ngx-datatable-column name="email" [flexGrow]="1"></ngx-datatable-column>-->
+<!--<ngx-datatable-column name="birthday" [flexGrow]="1"></ngx-datatable-column>-->
+<!--<ngx-datatable-column name="note" [flexGrow]="1"></ngx-datatable-column>-->
+<!--</ngx-datatable>-->

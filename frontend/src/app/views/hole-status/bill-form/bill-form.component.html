@@ -1,0 +1,187 @@
+<div class="modal-header">
+  <h4 class="modal-title">会計</h4>
+  <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+    <span aria-hidden="true">&times;閉じる</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="row">
+    <div class="col-md-12">
+      <form [formGroup]="billForm"
+            (ngSubmit)="submitBillForm(billForm)"
+            class="p-3"
+            autocomplete="off"
+      >
+        <div class="row">
+          <div class="col-md-4 form-group">
+            <!--<input type="text" formControlName="seatId">-->
+            <p-dropdown [options]="seatOptions" [filter]="true" [style]="{'minWidth':'120px'}"
+                        placeholder="席を選択" (onChange)="onSelectSeat($event)"
+                        formControlName="seatId" id="seatId"
+                        [autofocus]="false"></p-dropdown>
+          </div>
+          <div class="col-md-4 form-group">
+            <p-dropdown [options]="customerOptions" [filter]="true" [style]="{'width':'100%'}"
+                        placeholder="お客様のお名前を選択" (onChange)="onSelectCustomer($event)"
+                        formControlName="customerId" id="customerId"></p-dropdown>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <table class="table">
+              <tbody>
+              <tr>
+                <th class="align-middle" scope="row" width="100">担当</th>
+                <td colspan="3">
+                  <p-dropdown [options]="castOptions" [filter]="true"
+                              placeholder="担当を選択" (onChange)="onSelectAccountCast($event)"
+                              formControlName="accountCastId" id="accountCastId"></p-dropdown>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th class="align-middle" scope="row">同伴</th>
+                <td width="90">
+                  <div class="">
+                    <label for="numberOfDouhan" class="col-form-label-sm">人数</label>
+                    <input type="number" class="form-control"
+                           id="numberOfDouhan" name="numberOfDouhan" formControlName="numberOfDouhan"
+                           placeholder="">
+                  </div>
+                </td>
+                <td colspan="3">
+                  <div class="">
+                    <label for="douhanFee" class="col-form-label-sm">金額</label>
+                    <input type="number" class="form-control"
+                           id="douhanFee" name="douhanFee" formControlName="douhanFee"
+                           placeholder="">
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <th class="align-middle" scope="row">指名</th>
+                <td>
+                  <div class="">
+                    <label for="numberOfCalledCast" class="col-form-label-sm">人数</label>
+                    <input type="number" class="form-control"
+                           id="numberOfCalledCast" name="numberOfCalledCast" formControlName="numberOfCalledCast"
+                           placeholder="">
+                  </div>
+                </td>
+                <td colspan="3">
+                  <div class="">
+                    <label for="callingFee" class="col-form-label-sm">金額</label>
+                    <input type="number" class="form-control"
+                           id="callingFee" name="callingFee" formControlName="callingFee"
+                           placeholder="">
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <th class="align-middle" scope="row">セット</th>
+                <td>
+                  <div class="">
+                    <label for="numberOfCustomer" class="col-form-label-sm">人数</label>
+                    <input type="number" class="form-control"
+                           id="numberOfCustomer" name="numberOfCustomer" formControlName="numberOfCustomer"
+                           placeholder="">
+                  </div>
+                </td>
+                <td width="90">
+                  <div>
+                    <label for="numberOfSet" class="col-form-label-sm">セット数</label>
+                    <input type="number" class="form-control"
+                           id="numberOfSet" name="numberOfSet" formControlName="numberOfSet"
+                           placeholder="">
+                  </div>
+                </td>
+                <td colspan="3">
+                  <div class="">
+                    <label for="setFee" class="col-form-label-sm">金額</label>
+                    <input type="number" class="form-control"
+                           id="setFee" name="setFee" formControlName="setFee"
+                           placeholder="">
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h2>注文明細</h2>
+            <app-order-list></app-order-list>
+          </div>
+        </div>
+        <div class="row border-top pt-3">
+          <div class="col-md-12">
+            <div class="form-group row justify-content-end">
+              <label for="discount" class="col-md-2 col-form-label-sm">値引き</label>
+              <div class="col-md-4">
+                <input type="number" class="form-control"
+                       id="discount" name="discount" formControlName="discount"
+                       placeholder="">
+              </div>
+            </div>
+            <div class="form-group row justify-content-end">
+              <label for="subTotal" class="col-md-2 col-form-label-sm">小計</label>
+              <div class="col-md-4">
+                <input type="number" class="form-control"
+                       id="subTotal" name="subTotal" formControlName="subTotal"
+                       placeholder="">
+              </div>
+
+            </div>
+            <div class="form-group row justify-content-end">
+              <label for="subTotal" class="col-md-3 col-form-label-sm">サービス税</label>
+              <div class="col-md-3 input-group">
+                <input type="number" class="form-control"
+                       id="serviceTaxRatio" name="serviceTaxRatio" formControlName="serviceTaxRatio"
+                       placeholder="">
+                <div class="input-group-append">
+                  <span class="input-group-text">%</span>
+                </div>
+
+              </div>
+              <div class="col-md-4">
+                <input type="number" class="form-control"
+                       id="serviceTax" name="serviceTax" formControlName="serviceTax"
+                       placeholder="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row border-top pt-3">
+          <div class="col-md-12">
+            <div class="form-group row justify-content-end">
+              <label for="discount" class="col-md-2 col-form-label-sm">合計</label>
+              <div class="col-md-4">
+                <input type="number" class="form-control"
+                       id="total" name="total" formControlName="total"
+                       placeholder="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row border-top pt-3">
+          <div class="col-md-12">
+            <button class="btn btn-outline-info btn-rounded" type="button"
+                    (click)="printBill(billForm)"
+            ><i class="i-Billing"></i> 印刷
+            </button>
+            <button class="btn btn-primary btn-rounded float-right" type="button"
+                    (click)="confirmBill(billForm)"
+                    ngbAutofocus
+            >会計完了
+            </button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>

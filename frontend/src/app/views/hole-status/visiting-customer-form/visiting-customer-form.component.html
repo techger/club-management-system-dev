@@ -1,0 +1,102 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="">ご来店のお客様を入力</h4>
+  <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+    <span aria-hidden="true">&times;閉じる</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form [formGroup]="visitingCustomerForm"
+        (ngSubmit)="submitVisitingCustomerForm(visitingCustomerForm)"
+        class="p-3"
+        autocomplete="off">
+    <table class="table table-bordered">
+      <tbody>
+      <tr>
+        <th width="100">お客様</th>
+        <td>
+          <p-dropdown [options]="customerOptions" [filter]="true" [style]="{width:'100%'}"
+                      placeholder="お客様のお名前を選択" (onChange)="onSelectCustomer($event)"
+                      formControlName="name" id="name"></p-dropdown>
+        </td>
+      </tr>
+      <tr>
+        <th>来店人数</th>
+        <td>
+          <input type="number" class="form-control"
+                 id="numberOfCustomer" name="numberOfCustomer" formControlName="numberOfCustomer"
+                 placeholder="来店人数を入力">
+        </td>
+      </tr>
+      <tr>
+        <th>担当者</th>
+        <td>
+          <p-dropdown [options]="castOptions" [filter]="true" [style]="{width:'100%'}"
+                      placeholder="担当を選択" (onChange)="onSelectAccountCast($event)"
+                      formControlName="accountCast" id="accountCast"></p-dropdown>
+        </td>
+      </tr>
+      <tr>
+        <th>入店時刻</th>
+        <td>
+          <div class="row">
+            <div class="col-md-7">
+              <input class="form-control"
+                     id="entryDate"
+                     name="entryDate"
+                     formControlName="entryDate"
+                     type="date">
+            </div>
+            <div class="col-md-5">
+              <input class="form-control"
+                     id="entryTime"
+                     name="entryTime"
+                     formControlName="entryTime"
+                     atp-time-picker
+                     type="time">
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>座席</th>
+        <td>
+          <p-dropdown [options]="seatOptions" [filter]="true" [style]="{width:'100%'}"
+                      placeholder="席を選択" (onChange)="onSelectSeat($event)"
+                      formControlName="seat" id="seat"></p-dropdown>
+        </td>
+      </tr>
+      <tr>
+        <th>同伴キャスト</th>
+        <td>
+          <p-multiSelect [options]="castOptions" [filter]="true" [panelStyle]="{minWidth:'300px'}"
+                         [itemSize]="30" [style]="{width:'100%'}" [maxSelectedLabels]="10"
+                         [showToggleAll]="false"
+                         [defaultLabel]="" (onChange)="onSelectDouhanCast($event)"
+                         formControlName="douhanCasts" id="douhanCasts"></p-multiSelect>
+        </td>
+      </tr>
+      <tr>
+        <th>指名キャスト</th>
+        <td>
+          <p-multiSelect [options]="castOptions" [filter]="true" [panelStyle]="{minWidth:'300px'}"
+                         [itemSize]="30" [style]="{width:'100%'}" [maxSelectedLabels]="10"
+                         [showToggleAll]="false"
+                         [defaultLabel]="" (onChange)="onSelectCalledCast($event)"
+                         formControlName="calledCasts" id="calledCasts"></p-multiSelect>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </form>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-danger btn-rounded float-left"
+          (click)="deleteVisitingCustomer(visitingCustomerForm)"
+          *ngIf="isEditVisitingCustomer">削除
+  </button>
+  <button class="btn btn-primary btn-rounded float-right"
+          (click)="submitVisitingCustomerForm(visitingCustomerForm)"
+          ngbAutofocus
+  >保存
+  </button>
+</div>

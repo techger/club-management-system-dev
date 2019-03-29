@@ -1,0 +1,65 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="">新規キャスト登録</h4>
+  <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+    <span aria-hidden="true">&times;閉じる</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form [formGroup]="castForm"
+        (ngSubmit)="submitCastForm(castForm)"
+        class="p-3"
+        autocomplete="off">
+    <table class="table table-bordered">
+      <tbody>
+      <tr>
+        <th width="100">名前<br><span class="text-danger">*必須</span></th>
+        <td>
+          <input type="text" class="form-control"
+                 id="name" name="name" formControlName="name"
+                 placeholder="名前">
+        </td>
+      </tr>
+      <tr>
+        <th width="100">ふりがな<br><span class="text-danger">*必須</span></th>
+        <td>
+          <input type="text" class="form-control"
+                 id="kana" name="kana" formControlName="kana"
+                 placeholder="ふりがな">
+        </td>
+      </tr>
+      <tr>
+        <th>誕生日</th>
+        <td>
+          <input type="date" class="form-control"
+                 id="birthday" name="birthday" formControlName="birthday"
+                 placeholder="">
+        </td>
+      </tr>
+      <tr>
+        <th>出身地</th>
+        <td>
+          <p-dropdown [options]="birthplaceOptions" [filter]="true" [style]="{width:'100%'}"
+                      placeholder="出身地を選択"
+                      formControlName="birthplace" id="birthplace"></p-dropdown>
+        </td>
+      </tr>
+      <tr>
+        <th>入店日</th>
+        <td>
+          <input class="form-control"
+                 id="entryDate"
+                 name="entryDate"
+                 formControlName="entryDate"
+                 type="date">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </form>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary btn-rounded float-right"
+          (click)="submitCastForm(castForm)"
+  ><i class="i-Add"></i> 保存
+  </button>
+</div>

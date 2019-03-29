@@ -1,0 +1,46 @@
+<ngx-datatable
+        class="material"
+        [rows]="events"
+        [columnMode]="'flex'"
+        [rowHeight]="50"
+        (select)="onSelect($event)"
+        >
+  <ngx-datatable-column name="time" [flexGrow]="1">
+    <ng-template let-column="column" ngx-datatable-header-template>
+      時刻
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column name="customer" [flexGrow]="1">
+    <ng-template let-column="column" ngx-datatable-header-template>
+      お客様
+    </ng-template>
+    <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+      {{value}} ({{row.numberOfCustomer}}名)
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column name="mainCast" [flexGrow]="1">
+    <ng-template let-column="column" ngx-datatable-header-template>
+      担当
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column name="douhanCasts" [flexGrow]="2">
+    <ng-template let-column="column" ngx-datatable-header-template>
+      同伴キャスト
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column name="note" [flexGrow]="3">
+    <ng-template let-column="column" ngx-datatable-header-template>
+      備考
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column [flexGrow]="1">
+    <ng-template lew-row="row" ngx-datatable-cell-template>
+      <button type="button" class="btn btn-sm btn-outline-primary">
+        <i class="i-Pen-4"></i>
+      </button>
+      <button type="button" class="btn btn-sm btn-outline-danger ml-1">
+        <i class="i-Close"></i>
+      </button>
+    </ng-template>
+  </ngx-datatable-column>
+</ngx-datatable>

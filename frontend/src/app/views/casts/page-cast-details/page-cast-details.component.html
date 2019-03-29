@@ -1,0 +1,94 @@
+<div class="breadcrumb">
+  <h1>{{cast.name}}</h1>
+  <ul>
+    <li><a [routerLink]="['/cast-list']">キャスト一覧へ</a></li>
+    <li>キャスト情報</li>
+  </ul>
+</div>
+<div class="separator-breadcrumb border-top"></div>
+
+<div>
+  <ngb-tabset class="p-0">
+    <ngb-tab title="成績">
+      <ng-template ngbTabContent>
+        <!--Range Form-->
+        <div class="row">
+          <div class="col-md-12">
+            <form [formGroup]="rangeForm" (submit)="onFilterRange(rangeForm)">
+              <div class="row">
+                <div class="form-group col-md-3">
+                  <label for="fromDate">Start: </label>
+                  <input id="fromDate" name="fromDate"
+                         class="form-control" type="date"
+                         formControlName="fromDate">
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="toDate">End: </label>
+                  <input id="toDate" name="toDate"
+                         class="form-control" type="date"
+                         formControlName="toDate">
+
+                </div>
+                <btn-loading
+                        btnClass="btn-primary btn-rounded"
+                        [loading]="loadingHistories"
+                        loadingText="データ取得中"
+                        (click)="onFilterRange(rangeForm)"
+                        placement="right" class="pt-4">
+                  更新
+                </btn-loading>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!--//Range Form-->
+
+        <div class="row">
+          <!--Visit History-->
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <app-visit-history
+                      [castId]="castId"
+                      [fromDate]="fromDate" [toDate]="toDate"
+              ></app-visit-history>
+            </div>
+          </div>
+          <!--//Visit History-->
+
+          <!--Douhan History-->
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <app-douhan-history
+                      [castId]="castId"
+                      [fromDate]="fromDate" [toDate]="toDate"
+              ></app-douhan-history>
+            </div>
+          </div>
+          <!--//Douhan History-->
+
+        </div>
+
+        <!--Performance Graph-->
+        <!--<div class="row">-->
+          <!--<div class="col-md-12">-->
+            <!--<div class="card mb-4">-->
+              <!--<app-performance-graph-->
+                      <!--[castId]="castId"-->
+                      <!--[fromDate]="fromDate" [toDate]="toDate"-->
+              <!--&gt;-->
+              <!--</app-performance-graph>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--//Performance Graph-->
+
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="基本情報">
+      <ng-template ngbTabContent>
+        <p>キャストの基本情報ページ</p>
+        <p>記録したい項目を要確認</p>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>

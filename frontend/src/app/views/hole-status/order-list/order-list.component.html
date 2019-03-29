@@ -1,0 +1,34 @@
+<ngx-datatable
+        style="box-shadow: none"
+        class="material fullscreen"
+        [columnMode]="'standard'"
+        [headerHeight]="50"
+        [footerHeight]="0"
+        [rowHeight]="40"
+        [rows]="orders"
+        (activate)="onActivate($event)">
+  <ngx-datatable-column name="item">
+    <ng-template ngx-datatable-header-template>
+      商品
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column name="quantity" [width]="100">
+    <ng-template ngx-datatable-header-template>
+      数量
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column name="price" [width]="100">
+    <ng-template ngx-datatable-header-template>
+      金額
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column [width]="100">
+    <ng-template ngx-datatable-cell-template let-row="row">
+      <!--<p class="m-0 text-muted text-small w-15 w-sm-100 d-none d-lg-block item-actions">-->
+        <button class="btn btn-icon bg-transparent" (click)="deleteOrder(row)" style="margin-top: -7px">
+          <i class="i-Close text-16 text-danger"></i>
+        </button>
+      <!--</p>-->
+    </ng-template>
+  </ngx-datatable-column>
+</ngx-datatable>

@@ -1,0 +1,177 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="">同伴予定を入力</h4>
+  <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+    <span aria-hidden="true">&times;閉じる</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form name="taskForm" [formGroup]="taskForm"
+        (ngSubmit)="submitTaskForm(taskForm)"
+        class="p-3"
+        autocomplete="off">
+    <div class="row mb-4">
+      <div class="col-md-7">
+        <label for="start">日付</label>
+        <input class="form-control"
+               id="start"
+               name="start"
+               formControlName="start"
+               type="date">
+      </div>
+      <div class="col-md-5">
+        <label for="time">時刻</label>
+        <input class="form-control"
+               id="time"
+               name="time"
+               formControlName="time"
+               atp-time-picker
+               type="time">
+      </div>
+      <!--<div class="col-md-12 form-group">-->
+      <!--<label for="start">日付: </label>-->
+      <!--<div class="input-group">-->
+      <!--<input class="form-control form-control-rounded"-->
+      <!--id="start"-->
+      <!--name="start"-->
+      <!--formControlName="start"-->
+      <!--ngbDatepicker-->
+      <!--#start="ngbDatepicker"-->
+      <!--&gt;-->
+      <!--<div class="input-group-append">-->
+      <!--<button class="btn btn-secondary"-->
+      <!--(click)="start.toggle()" type="button">-->
+      <!--<i class="i-Calendar-4"></i>-->
+      <!--</button>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+    </div>
+    <!--<div class="row">-->
+    <!--<div class="col-md-12 form-group">-->
+    <!--<label for="time">時刻: </label>-->
+    <!--<input class="form-control form-control-rounded"-->
+    <!--id="time"-->
+    <!--name="time"-->
+    <!--formControlName="time"-->
+    <!--atp-time-picker-->
+    <!--type="time"-->
+    <!--&gt;-->
+    <!--<input type="time" class="form-control form-control-rounded"-->
+    <!--id="time" name="time" formControlName="time">-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+    <!--<div class="col-md-12 form-group">-->
+    <!--<mat-form-field>-->
+    <!--<input type="text" class="form-control form-control-rounded"-->
+    <!--placeholder="担当者を選択" matInput [matAutocomplete]="autoMainCast"-->
+    <!--formControlName="mainCast"-->
+    <!--id="main-cast"-->
+    <!--autocomplete="off">-->
+    <!--<mat-autocomplete #autoMainCast="matAutocomplete" [displayWith]="displayMainCast">-->
+    <!--<mat-option *ngFor="let cast of mainCasts$ | async" [value]="cast">-->
+    <!--{{cast.name}} {{cast.castId}}-->
+    <!--</mat-option>-->
+    <!--</mat-autocomplete>-->
+    <!--</mat-form-field>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+    <!--<div class="col-md-12 form-group">-->
+    <!--<mat-form-field>-->
+    <!--<input type="text" class="form-control form-control-rounded"-->
+    <!--placeholder="顧客名を選択" matInput [matAutocomplete]="autoCustomer"-->
+    <!--formControlName="customer"-->
+    <!--id="customer"-->
+    <!--autocomplete="off">-->
+    <!--<mat-autocomplete #autoCustomer="matAutocomplete" [displayWith]="displayCustomer">-->
+    <!--<mat-option *ngFor="let customer of customers$ | async" [value]="customer">-->
+    <!--{{customer.name}} {{customer.customerId}}-->
+    <!--</mat-option>-->
+    <!--</mat-autocomplete>-->
+    <!--</mat-form-field>-->
+    <!--<mat-form-field>-->
+    <!--<mat-select [formControl]="customerMultiCtrl" placeholder="顧客名を選択"-->
+    <!--[multiple]="true" #multiSelect-->
+    <!--name="customer"-->
+    <!--&gt;-->
+    <!--<mat-option>-->
+    <!--<ngx-mat-select-search [formControl]="customerMultiFilterCtrl"></ngx-mat-select-search>-->
+    <!--</mat-option>-->
+    <!--<mat-option *ngFor="let customer of filteredCustomersMulti | async" [value]="customer">-->
+    <!--{{customer.name}}-->
+    <!--</mat-option>-->
+    <!--</mat-select>-->
+    <!--</mat-form-field>-->
+    <!--</div>-->
+    <!--</div>-->
+    <div class="row mb-2">
+      <div class="col-md-12 form-group">
+        <label for="customer">お客様</label>
+        <p-dropdown [options]="customerOptions" [filter]="true" [style]="{width:'100%'}"
+                    placeholder="お客様のお名前を選択" (onChange)="onSelectCustomer($event)"
+                    formControlName="customer" id="customer"></p-dropdown>
+      </div>
+    </div>
+    <!--<div class="row">-->
+    <!--<div class="col-md-12 form-group">-->
+    <!--<mat-form-field>-->
+    <!--<input type="text" class="form-control form-control-rounded"-->
+    <!--placeholder="同伴キャストを選択" matInput [matAutocomplete]="autoDouhanCast"-->
+    <!--formControlName="douhanCasts"-->
+    <!--id="douhan-casts"-->
+    <!--autocomplete="off">-->
+    <!--<mat-autocomplete #autoDouhanCast="matAutocomplete" [displayWith]="displayDouhanCast">-->
+    <!--<mat-option *ngFor="let cast of douhanCasts$ | async" [value]="cast">-->
+    <!--{{cast.name}} {{cast.castId}}-->
+    <!--</mat-option>-->
+    <!--</mat-autocomplete>-->
+    <!--</mat-form-field>-->
+    <!--</div>-->
+    <!--<div class="col-md-12 form-group">-->
+    <!--<mat-form-field style="width:100%;">-->
+    <!--<mat-select placeholder="同伴キャストを選択" name="douhanCasts" id="douhan-casts"-->
+    <!--formControlName="douhanCasts"-->
+    <!--autocomplete="off" multiple>-->
+    <!--<mat-option *ngFor="let cast of canDouhanCasts" [value]="cast">-->
+    <!--{{cast.name}} {{cast.castId}}-->
+    <!--</mat-option>-->
+    <!--</mat-select>-->
+    <!--</mat-form-field>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <div class="row mb-2">
+      <div class="col-md-12 form-group">
+        <label for="douhanCasts">同伴キャスト</label>
+        <p-multiSelect [options]="castOptions" [filter]="true"
+                       [panelStyle]="{minWidth:'100%'}" [style]="{width:'100%'}"
+                       [itemSize]="30" [maxSelectedLabels]="10"
+                       [showToggleAll]="false"
+                       [defaultLabel]="" (onChange)="onSelectDouhanCast($event)"
+                       formControlName="douhanCasts" id="douhanCasts"></p-multiSelect>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 form-group">
+        <label for="note">備考: </label>
+        <textarea class="form-control"
+                  id="note"
+                  name="note"
+                  formControlName="note"></textarea>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-info btn-rounded"
+          [disabled]="taskForm.invalid || loadingTaskForm"
+          [ngClass]="{loading: loadingTaskForm}"
+          (click)="submitTaskForm(taskForm)"
+  >
+    <div class="btn-spinner float-left" *ngIf="loadingTaskForm"></div>
+    <span *ngIf="!loadingTaskForm">登録</span>
+    <span *ngIf="loadingTaskForm">登録中...</span>
+  </button>
+</div>

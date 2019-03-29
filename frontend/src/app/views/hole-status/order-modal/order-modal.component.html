@@ -1,0 +1,28 @@
+<div class="modal-header">
+  <h4 class="modal-title">注文</h4>
+  <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+    <span aria-hidden="true">&times;閉じる</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mb-2">
+        <div class="card-header">
+          注文入力
+        </div>
+        <div class="card-body">
+          <app-order-form></app-order-form>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          注文詳細
+        </div>
+        <div class="card-body">
+          <app-order-list (selectedOrderEvent)="getSelectedOrder($event)"></app-order-list>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

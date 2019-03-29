@@ -1,0 +1,7 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+export { MatSelectSearchComponent } from './mat-select-search.component';
+export { MatSelectSearchVersion, NgxMatSelectSearchModule } from './ngx-mat-select-search.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljX2FwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25neC1tYXQtc2VsZWN0LXNlYXJjaC8iLCJzb3VyY2VzIjpbInB1YmxpY19hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7OztBQUFBLHlDQUFjLCtCQUErQixDQUFDO0FBQzlDLGlFQUFjLGdDQUFnQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0ICogZnJvbSAnLi9tYXQtc2VsZWN0LXNlYXJjaC5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9uZ3gtbWF0LXNlbGVjdC1zZWFyY2gubW9kdWxlJztcbiJdfQ==

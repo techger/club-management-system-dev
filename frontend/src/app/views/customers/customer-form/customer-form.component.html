@@ -1,0 +1,57 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="">初来店・初同伴のお客様を簡易登録</h4>
+  <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+    <span aria-hidden="true">&times;閉じる</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form name="customerForm" [formGroup]="customerForm"
+        (ngSubmit)="submitCustomerForm(customerForm)"
+        class="p-3"
+        autocomplete="off">
+    <table class="table table-bordered">
+      <tbody>
+      <tr>
+        <th>お名前<span class="text-danger">*必須</span></th>
+        <td>
+          <input class="form-control"
+                 id="name"
+                 name="name"
+                 formControlName="name"
+                 required>
+        </td>
+      </tr>
+      <tr>
+        <th>ふりがな<span class="text-danger">*必須</span></th>
+        <td>
+          <input class="form-control"
+                 id="nameKana"
+                 name="nameKana"
+                 formControlName="nameKana"
+                 required>
+        </td>
+      </tr>
+      <tr>
+        <th>お誕生日</th>
+        <td>
+          <input class="form-control"
+                 id="birthday"
+                 name="birthday"
+                 formControlName="birthday"
+                 type="date">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </form>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-info btn-rounded"
+          [disabled]="customerForm.invalid || loadingCustomerForm"
+          [ngClass]="{loading: loadingCustomerForm}"
+          (click)="submitCustomerForm(customerForm)">
+    <div class="btn-spinner float-left" *ngIf="loadingCustomerForm"></div>
+    <span *ngIf="!loadingCustomerForm">登録</span>
+    <span *ngIf="loadingCustomerForm">登録中...</span>
+  </button>
+</div>

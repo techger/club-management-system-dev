@@ -1,0 +1,62 @@
+<div class="modal-header">
+  <h4 class="modal-title">人数追加</h4>
+  <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+    <span aria-hidden="true">&times;閉じる</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="row">
+    <div class="col-md-12">
+      <form [formGroup]="addVisitingCustomerForm"
+            (ngSubmit)="submitAddVisitingCustomerForm(addVisitingCustomerForm)"
+            class="p-3"
+            autocomplete="off">
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <table class="table table-bordered">
+              <tbody>
+              <tr>
+                <th>来店人数</th>
+                <td>
+                  <input type="number" class="form-control"
+                         id="numberOfCustomer" name="numberOfCustomer" formControlName="numberOfCustomer"
+                         placeholder="">
+                </td>
+              </tr>
+              <tr>
+                <th>入店時刻</th>
+                <td>
+                  <div class="row">
+                    <div class="col-md-7">
+                      <input class="form-control"
+                             id="entryDate"
+                             name="entryDate"
+                             formControlName="entryDate"
+                             type="date">
+                    </div>
+                    <div class="col-md-5">
+                      <input class="form-control"
+                             id="entryTime"
+                             name="entryTime"
+                             formControlName="entryTime"
+                             atp-time-picker
+                             type="time">
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary btn-rounded float-right"
+          (click)="submitAddVisitingCustomerForm(addVisitingCustomerForm)"
+          ngbAutofocus
+  >追加
+  </button>
+</div>

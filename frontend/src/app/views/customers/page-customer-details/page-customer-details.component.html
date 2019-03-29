@@ -1,0 +1,24 @@
+<div class="breadcrumb">
+  <h1>{{customer.name}}様</h1>
+  <ul>
+    <li><a [routerLink]="['/customer-list']">顧客一覧へ</a></li>
+    <li>顧客情報</li>
+  </ul>
+</div>
+<div class="separator-breadcrumb border-top"></div>
+<div>
+  <ngb-tabset class="p-0">
+    <ngb-tab title="基本情報">
+      <ng-template ngbTabContent>
+        <app-customer-details-form
+                [customer]="customer" [customerId]="customerId"
+        ></app-customer-details-form>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="来店履歴">
+      <ng-template ngbTabContent>
+        <p>来店履歴</p>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>

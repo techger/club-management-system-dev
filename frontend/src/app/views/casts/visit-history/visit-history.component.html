@@ -1,0 +1,45 @@
+<div class="card-body">
+  <div class="card-title m-0">
+    来店履歴
+    <span class="text-small float-right">売上: {{sumTotal | number}}円 | 組数: {{visitHistory.length}}組</span>
+  </div>
+</div>
+<ngx-datatable
+        style="height: 500px; box-shadow: none"
+        class="material "
+        [columnMode]="'standard'"
+        [headerHeight]="50"
+        [footerHeight]="50"
+        [rowHeight]="40"
+        [scrollbarV]="true"
+        [rows]="visitHistory">
+  <ngx-datatable-column name="entryDate" [maxWidth]="120">
+    <ng-template ngx-datatable-header-template>
+      日付
+    </ng-template>
+  </ngx-datatable-column>
+  <ng-template ngx-datatable-cell-template let-row="row">
+    {{row.entryDate | date:'MM/dd'}}
+  </ng-template>
+  <ngx-datatable-column name="customerName" [maxWidth]="120">
+    <ng-template ngx-datatable-header-template>
+      お名前
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column name="total" [maxWidth]="120">
+    <ng-template ngx-datatable-header-template>
+      売上
+    </ng-template>
+    <ng-template ngx-datatable-cell-template let-row="row">
+      {{row.total | number}} 円
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column name="numberOfCustomer" [maxWidth]="120">
+    <ng-template ngx-datatable-header-template>
+      人数
+    </ng-template>
+    <ng-template ngx-datatable-cell-template let-row="row">
+      {{row.numberOfCustomer}} 人
+    </ng-template>
+  </ngx-datatable-column>
+</ngx-datatable>

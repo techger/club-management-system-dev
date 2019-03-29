@@ -1,0 +1,29 @@
+<div class="card-body">
+  <div class="card-title m-0">
+    同伴履歴
+    <span class="text-small float-right">組数: {{douhanHistory.length}}組</span>
+  </div>
+</div>
+<ngx-datatable
+        style="height: 500px; box-shadow: none"
+        class="material "
+        [columnMode]="'standard'"
+        [headerHeight]="50"
+        [footerHeight]="50"
+        [rowHeight]="40"
+        [scrollbarV]="true"
+        [rows]="douhanHistory">
+  <ngx-datatable-column name="douhanDate" [maxWidth]="120">
+    <ng-template ngx-datatable-header-template>
+      日付
+    </ng-template>
+  </ngx-datatable-column>
+  <ng-template ngx-datatable-cell-template let-row="row">
+    {{row.douhanDate | date:'MM/dd'}}
+  </ng-template>
+  <ngx-datatable-column name="customerName" [maxWidth]="120">
+    <ng-template ngx-datatable-header-template>
+      お名前
+    </ng-template>
+  </ngx-datatable-column>
+</ngx-datatable>

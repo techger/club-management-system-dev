@@ -1,0 +1,277 @@
+<div class="card mb-4">
+  <div class="card-body">
+    <form [formGroup]="customerDetailsForm"
+          autocomplete="off"
+          (submit)="submitCustomerDetailsForm(customerDetailsForm)">
+      <div class="row">
+        <div class="col-md-6">
+          <table class="table table-bordered">
+            <tr>
+              <th width="150">氏名</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="name" name="name" formControlName="name"
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>ふりがな</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="nameKana" name="nameKana" formControlName="nameKana"
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>携帯電話番号</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name="" formControlName="phone"
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>携帯メールアドレス</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name="" formControlName="email"
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>LINE ID</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name="" formControlName="lineId"
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>親しい女性</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name="" formControlName="girlfriend"
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>誕生日</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name="" formControlName="birthday"
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>誕生日物品</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>出身地</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>特徴</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>タバコ</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>ゴルフ</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>共通点</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>家族構成(ペット)</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>メモ欄</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <table class="table table-bordered">
+            <tr>
+              <th>会社</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>取引先</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>会社の創立(設立)</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>お中元</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>お歳暮</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>サイズ</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+          </table>
+          <table class="table table-bordered">
+            <tr>
+              <th rowspan="2">飲食(お酒)</th>
+              <th>OK</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>NG</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th rowspan="2">スポーツ</th>
+              <th>OK</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>NG</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th rowspan="2">女性</th>
+              <th>OK</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>NG</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th rowspan="2">色</th>
+              <th>OK</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>NG</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th rowspan="2">ブランド</th>
+              <th>OK</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <th>NG</th>
+              <td>
+                <input type="text" class="form-control"
+                       id="" name=""
+                       placeholder="">
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </form>
+    <button type="button" class="btn btn-primary fixed-bottom"
+            (click)="submitCustomerDetailsForm(customerDetailsForm)">
+      <i class="i-Yes"></i> 保存
+    </button>
+  </div>
+</div>

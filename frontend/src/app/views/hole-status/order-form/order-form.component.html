@@ -1,0 +1,24 @@
+<form [formGroup]="orderForm"
+      (ngSubmit)="submitOrderForm(orderForm)"
+      class="p-3"
+      autocomplete="off">
+  <div class="row">
+    <div class="col-md-6 form-group">
+      <p-dropdown [options]="itemOptions" [filter]="true" [group]="true"
+                  placeholder="商品を選択" (onChange)="onSelectOrderItem($event)"
+                  formControlName="item" id="item"></p-dropdown>
+    </div>
+    <div class="col-md-4 form-group">
+      <input type="number" class="form-control"
+             id="quantity" name="quantity" formControlName="quantity"
+             placeholder="数量を入力">
+    </div>
+    <div class="col-md-2 form-group">
+      <button class="btn btn-primary btn-rounded"
+              (click)="submitOrderForm(orderForm)"
+              ngbAutofocus
+      >追加
+      </button>
+    </div>
+  </div>
+</form>

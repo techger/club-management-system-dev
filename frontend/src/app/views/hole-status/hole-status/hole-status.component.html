@@ -1,0 +1,126 @@
+<div class="breadcrumb">
+  <h1>来客状況</h1>
+</div>
+<div class="separator-breadcrumb border-top"></div>
+
+<div class="row">
+  <div class="col-md-2 form-group">
+    <div class="input-group">
+      <input class="form-control"
+             id="date"
+             name="date"
+             [formControl]="dateCtrl"
+             ngbDatepicker
+             #date="ngbDatepicker"
+             (ngModelChange)="onChange($event)"
+      >
+      <div class="input-group-append">
+        <button class="btn btn-secondary"
+                (click)="date.toggle()" type="button">
+          <i class="i-Calendar-4"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-5">
+    <button class="btn btn-primary"
+            (click)="openVisitingCustomerFormModal()" type="button">
+      <i class="i-Add"> お客様ご来店</i>
+    </button>
+    <button class="btn btn-primary ml-1"
+            (click)="openRegisterCustomerFormModal()" type="button">
+      <i class="i-Add"> 初来店のお客様を簡易登録</i>
+    </button>
+  </div>
+
+  <div class="col-md-5 text-right">
+    <ul class="list-inline list-horizontal">
+      <li class="list-inline-item">組数: 10組 |</li>
+      <li class="list-inline-item">来客人数: 20人 |</li>
+      <li class="list-inline-item">売上: 1,000,000円</li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="">
+  <ngb-accordion #acc="ngbAccordion" [closeOthers]="false" activeIds="ngb-panel-0">
+    <ngb-panel title="同伴予定のお客様一覧">
+      <ng-template ngbPanelContent>
+        <div [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms',duration:'400ms'}}">
+          <div class="row">
+            <div class="col-md-12">
+              <button *ngFor="let customer of douhanCustomers"
+                      type="button" class="btn btn-outline-primary m-1"
+                      (click)="openDouhanCustomerModal(customer)">
+                {{customer.customerName}} | {{customer.douhanCast}}
+              </button>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-panel>
+
+    <ngb-panel title="来店中のお客様一覧">
+      <ng-template ngbPanelContent>
+        <div [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms',duration:'400ms'}}">
+          <div class="row">
+            <div *ngFor="let customer of visitingCustomers" class="col-md-3">
+              <div class="m-2 p-2 border border-light rounded align-items-center">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">{{customer.name}}様 {{customer.numberOfCustomer}}名
+                    <button class="btn btn-sm btn-link float-right" (click)="openAddVisitingCustomerModal(customer)">
+                      <i class="i-Add"></i> 人数追加
+                    </button>
+                  </li>
+                  <li class="list-group-item">担当：{{customer.accountCast}}</li>
+                  <li class="list-group-item">来店時間：{{customer.entryTime}}</li>
+                  <li class="list-group-item">席番号：{{customer.seat}}</li>
+                  <li class="list-group-item">同伴：{{customer.douhanCasts}}</li>
+                  <li class="list-group-item">指名：{{customer.calledCast}}</li>
+                </ul>
+                <div class="mt-1">
+                  <button type="button" (click)="openOrderModal(customer)" class="btn btn-sm btn-outline-primary "><i
+                          class="i-Add"></i> 注文
+                  </button>
+                  <button type="button" (click)="openBillModal(customer)" class="btn btn-sm btn-outline-primary ml-1"><i
+                          class="i-Billing"></i> 会計
+                  </button>
+                  <button type="button" (click)="openVisitingCustomerEditModal(customer)"
+                          class="btn btn-icon bg-transparent float-right"><i class="i-Pen-2 text-info"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel title="お会計済みのお客様一覧">
+      <ng-template ngbPanelContent>
+        <div [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms',duration:'400ms'}}">
+          <div class="row">
+            <div *ngFor="let customer of visitingCustomers" class="col-md-3">
+              <div class="m-2 p-2 border border-light rounded align-items-center">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">{{customer.name}}様 {{customer.numberOfCustomer}}名</li>
+                  <li class="list-group-item">担当：{{customer.accountCast}}</li>
+                  <li class="list-group-item">来店時間：{{customer.entryTime}}</li>
+                  <li class="list-group-item">席番号：{{customer.seat}}</li>
+                  <li class="list-group-item">同伴：{{customer.douhanCasts}}</li>
+                  <li class="list-group-item">指名：{{customer.calledCast}}</li>
+                </ul>
+                <div class="mt-1">
+                  <button type="button" (click)="openBillModal(customer)" class="btn btn-sm btn-outline-primary ml-1"><i
+                          class="i-Billing"></i> 会計
+                  </button>
+                  <button type="button" (click)="openCustomerSeatEditModal(customer)"
+                          class="btn btn-icon bg-transparent float-right"><i class="i-Pen-2 text-info"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-panel>
+  </ngb-accordion>
+</div>

@@ -1,0 +1,65 @@
+<div class="breadcrumb">
+  <h1>キャスト一覧</h1>
+</div>
+<div class="separator-breadcrumb border-top"></div>
+
+<div class="row">
+  <div class="col-md-2 mb-4">
+    <button class="btn btn-rounded btn-primary" (click)="openCastFormModal()">
+      <i class="i-Add text-20"></i> 新規キャスト登録
+    </button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card mb-4">
+      <p-table #dt [columns]="columns" [value]="casts"
+               [paginator]="true" [rows]="30"
+               [resizableColumns]="true">
+        <ng-template pTemplate="caption">
+          <div style="text-align: right">
+            <i class="i-Magnifi-Glass1" style="margin:4px 4px 0 0"></i>
+            <input type="text" pInputText size="50" placeholder="検索"
+                   (input)="dt.filterGlobal($event.target.value, 'contains')" style="width:auto">
+          </div>
+        </ng-template>
+        <ng-template pTemplate="colgroup" let-columns>
+          <colgroup>
+            <col *ngFor="let col of columns">
+          </colgroup>
+        </ng-template>
+        <ng-template pTemplate="header" let-columns>
+          <tr>
+            <th *ngFor="let col of columns" [pSortableColumn]="col.field" pResizableColumn>
+              {{col.header}}
+            </th>
+            <th style="width:4em"></th>
+          </tr>
+          <tr>
+            <th *ngFor="let col of columns" [ngSwitch]="col.field">
+              <input *ngSwitchCase="'name'" pInputText type="text"
+                     (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
+              <input *ngSwitchCase="'birthday'" pInputText type="text"
+                     (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
+              <input *ngSwitchCase="'birthplace'" pInputText type="text"
+                     (input)="dt.filter($event.target.value, col.field, col.filterMatchMode)">
+            </th>
+            <th></th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData let-columns="columns">
+          <tr [pSelectableRow]="rowData">
+            <td *ngFor="let col of columns" class="ui-resizable-column">
+              {{rowData[col.field]}}
+            </td>
+            <td>
+              <button class="btn btn-sm btn-icon" (click)="goToCastDetails(rowData)">
+                <i class="i-Magnifi-Glass1"></i>
+              </button>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </div>
+</div>

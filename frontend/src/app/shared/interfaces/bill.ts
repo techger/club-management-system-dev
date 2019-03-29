@@ -1,0 +1,22 @@
+export interface Bill {
+    billId?:string;
+    billCtrlNo?:string;
+    visitingCustomerId?:string;
+    seatId?:number;
+    customerId?:number;
+    accountCastId?:number;
+    workingDate?:string;
+    numberOfDouhan?:number;
+    douhanFee?:number;
+    numberOfCustomer?:number;
+    numberOfSet?:number;
+    callingFee?:number;
+    numberOfCalledCast?:string;
+    setFee?:number;
+    discount?:number;
+    subTotal?:number;
+    serviceTaxRatio?:number;
+    serviceTax?:number;
+    total?:number;
+    paymentType?:string;
+}

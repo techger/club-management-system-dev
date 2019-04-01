@@ -46,7 +46,7 @@ import {MultiSelectModule} from "primeng/components/multiselect/multiselect";
 
     ],
     declarations: [CalendarComponent, CalendarFormDialogComponent, TaskFormComponent, DayTaskDatatableComponent],
-    entryComponents: [CalendarFormDialogComponent, TaskFormComponent,CustomerFormComponent]
+    entryComponents: [CalendarFormDialogComponent, TaskFormComponent,CustomerFormComponent],
 })
 export class CalendarAppModule {
 }

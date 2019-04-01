@@ -45,7 +45,7 @@
             <file leaf-file-name="calendar.component.ts" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/app/views/calendar/calendar/calendar.component.ts">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-45">
+                  <state relative-caret-position="1875">
                     <caret line="125" column="54" lean-forward="true" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
                     <folding>
                       <element signature="e#0#74#0" expanded="true" />
@@ -160,6 +160,40 @@
             <entry file="file://$PROJECT_DIR$/src/app/views/sp/sp-dashboard/sp-dashboard.component.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
+                  <caret line="0" column="29" lean-forward="true" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="calendar.component.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/app/views/calendar/calendar/calendar.component.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sp.module.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/views/sp/sp.module.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#0#39#0" expanded="true" />
+                    <marker date="1553932744495" expanded="true" signature="290:431" ph="{...}" />
+                    <marker date="1553932744495" expanded="true" signature="455:458" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sp-dashboard.component.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/views/sp/sp-dashboard/sp-dashboard.component.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
                   <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
@@ -174,16 +208,6 @@
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="sp-layout.component.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/app/shared/components/layouts/sp-layout/sp-layout.component.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="31" lean-forward="true" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -239,6 +263,13 @@
       </split-second>
     </splitter>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>locale</find>
@@ -258,18 +289,12 @@
       <find>dayClicked</find>
       <find>handle</find>
       <find>get data</find>
+      <find>z-index:opacity</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/app/views/hole-status/visiting-customer-form/visiting-customer-form.component.html" />
-        <option value="$PROJECT_DIR$/src/app/views/hole-status/add-visiting-customer-form/add-visiting-customer-form.component.spec.ts" />
-        <option value="$PROJECT_DIR$/src/app/views/hole-status/add-visiting-customer-form/add-visiting-customer-form.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/views/hole-status/add-visiting-customer-form/add-visiting-customer-form.component.html" />
-        <option value="$PROJECT_DIR$/src/app/views/calendar/calendar/calendar.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/views/hole-status/hole-status.module.ts" />
-        <option value="$PROJECT_DIR$/src/app/views/customers/customers.module.ts" />
         <option value="$PROJECT_DIR$/src/app/views/customers/customer-details-form/customer-details-form.component.scss" />
         <option value="$PROJECT_DIR$/src/app/views/customers/customer-list/customer-list.component.html" />
         <option value="$PROJECT_DIR$/src/app/views/customers/customer-list/customer-list.component.ts" />
@@ -307,13 +332,20 @@
         <option value="$PROJECT_DIR$/src/app/shared/inmemory-db/calendar-events.ts" />
         <option value="$PROJECT_DIR$/src/app/views/calendar/task-form/task-form.component.ts" />
         <option value="$PROJECT_DIR$/src/app/views/sessions/signup/signup.component.html" />
-        <option value="$PROJECT_DIR$/src/app/views/calendar/calendar/calendar.component.html" />
         <option value="$PROJECT_DIR$/src/app/views/customers/customer-details-form/customer-details-form.component.ts" />
         <option value="$PROJECT_DIR$/src/app/views/sp/sp-routing.module.ts" />
         <option value="$PROJECT_DIR$/src/app/shared/components/layouts/layouts.module.ts" />
         <option value="$PROJECT_DIR$/src/app/shared/services/navigation.service.ts" />
         <option value="$PROJECT_DIR$/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/src/app/shared/components/layouts/sp-layout/sp-layout.component.html" />
+        <option value="$PROJECT_DIR$/../../../../999Templates,Modules,Plugins/003Mobile templates/themeforest-22976470-eazy-mobile-mobile-template/EazyMobile/_starter.html" />
+        <option value="$PROJECT_DIR$/src/app/views/sp/style.css" />
+        <option value="$PROJECT_DIR$/src/app/views/sp/styles/framework.css" />
+        <option value="$PROJECT_DIR$/src/app/views/sp/sp-dashboard/sp-dashboard.component.scss" />
+        <option value="$PROJECT_DIR$/src/app/views/sp/sp-dashboard/sp-dashboard.component.html" />
+        <option value="$PROJECT_DIR$/src/app/views/sp/sp.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/views/calendar/calendar.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/views/calendar/calendar/calendar.component.html" />
       </list>
     </option>
   </component>
@@ -463,7 +495,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sessions" />
+              <option name="myItemId" value="hole-status" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -489,11 +521,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sessions" />
+              <option name="myItemId" value="customers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="signin" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calendar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -516,156 +570,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sp-layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auth-layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -678,11 +582,17 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="navigation&#9;null&#9;null&#10;customerdetailsformcompo&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/customer-details-form/customer-details-form.component.ts&#10;pageregistercustomercom&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/page-register-customer/page-register-customer.component.html&#10;calendarhtml&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/calendar/calendar/calendar.component.html&#10;signup&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/sessions/signup/signup.component.html&#10;taskform&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/calendar/task-form/task-form.component.ts&#10;calendar&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/calendar/calendar-app.service.ts&#10;Calendar&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/shared/models/calendar-event.model.ts&#10;visiting&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/hole-status/visiting-customer-form/visiting-customer-form.component.html&#10;custoser&#9;null&#9;null&#10;holesta&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/hole-status/hole-status/hole-status.component.ts&#10;customerdetailsformcom&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/customer-details-form/customer-details-form.component.ts&#10;customerservi&#9;null&#9;null&#10;holestatus&#9;null&#9;null&#10;customer&#9;null&#9;null&#10;pagecu&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/page-customer-details/page-customer-details.component.ts&#10;performance&#9;null&#9;null&#10;pageca&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/page-cast-details/page-cast-details.component.ts&#10;customerserv&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/shared/services/customer.service.ts&#10;douhan&#9;null&#9;null&#10;visithist&#9;null&#9;null&#10;page&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/page-cast-details/page-cast-details.component.ts&#10;pagecast&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/page-cast-details/page-cast-details.component.html&#10;visit&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/visit-history/visit-history.component.ts&#10;card&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/ui-kits/card-widgets/card-widgets.component.html&#10;castdetails&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/page-cast-details/page-cast-details.component.html&#10;list&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/hole-status/order-list/order-list.component.html&#10;castmod&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/casts.module.ts&#10;rou&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/casts-routing.module.ts&#10;customerdetails&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/customer-details-form/customer-details-form.component.ts&#10;bill&#9;null&#9;null&#10;page-cast&#9;null&#9;null&#10;castrout&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/casts-routing.module.ts&#10;customerrout&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/customers-routing.module.ts&#10;castrou&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/casts-routing.module.ts&#10;castform&#9;null&#9;null&#10;castmodul&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/casts.module.ts&#10;addvisitin&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/hole-status/add-visiting-customer-form/add-visiting-customer-form.component.html&#10;visitingh&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/hole-status/visiting-customer-form/visiting-customer-form.component.html&#10;calendarmo&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/calendar/calendar.module.ts&#10;calendarmodu&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/calendar/calendar.module.ts&#10;customermodu&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/customers.module.ts&#10;castmodu&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/casts.module.ts&#10;cast&#9;null&#9;null&#10;castservi&#9;null&#9;null&#10;customerlist&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/customer-list/customer-list.component.ts&#10;castlist&#9;null&#9;null&#10;customer list&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/customer-list/customer-list.component.html&#10;appmo&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/app-routing.module.ts&#10;customerrou&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/customers-routing.module.ts" />
+    <property name="SearchEverywhereHistoryKey" value="calendar&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/calendar/calendar/calendar.component.html&#10;navigation&#9;null&#9;null&#10;customerdetailsformcompo&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/customer-details-form/customer-details-form.component.ts&#10;pageregistercustomercom&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/page-register-customer/page-register-customer.component.html&#10;calendarhtml&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/calendar/calendar/calendar.component.html&#10;signup&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/sessions/signup/signup.component.html&#10;taskform&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/calendar/task-form/task-form.component.ts&#10;Calendar&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/shared/models/calendar-event.model.ts&#10;visiting&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/hole-status/visiting-customer-form/visiting-customer-form.component.html&#10;custoser&#9;null&#9;null&#10;holesta&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/hole-status/hole-status/hole-status.component.ts&#10;customerdetailsformcom&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/customer-details-form/customer-details-form.component.ts&#10;customerservi&#9;null&#9;null&#10;holestatus&#9;null&#9;null&#10;customer&#9;null&#9;null&#10;pagecu&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/page-customer-details/page-customer-details.component.ts&#10;performance&#9;null&#9;null&#10;pageca&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/page-cast-details/page-cast-details.component.ts&#10;customerserv&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/shared/services/customer.service.ts&#10;douhan&#9;null&#9;null&#10;visithist&#9;null&#9;null&#10;page&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/page-cast-details/page-cast-details.component.ts&#10;pagecast&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/page-cast-details/page-cast-details.component.html&#10;visit&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/visit-history/visit-history.component.ts&#10;card&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/ui-kits/card-widgets/card-widgets.component.html&#10;castdetails&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/page-cast-details/page-cast-details.component.html&#10;list&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/hole-status/order-list/order-list.component.html&#10;castmod&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/casts.module.ts&#10;rou&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/casts-routing.module.ts&#10;customerdetails&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/customer-details-form/customer-details-form.component.ts&#10;bill&#9;null&#9;null&#10;page-cast&#9;null&#9;null&#10;castrout&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/casts-routing.module.ts&#10;customerrout&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/customers-routing.module.ts&#10;castrou&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/casts-routing.module.ts&#10;castform&#9;null&#9;null&#10;castmodul&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/casts.module.ts&#10;addvisitin&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/hole-status/add-visiting-customer-form/add-visiting-customer-form.component.html&#10;visitingh&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/hole-status/visiting-customer-form/visiting-customer-form.component.html&#10;calendarmo&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/calendar/calendar.module.ts&#10;calendarmodu&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/calendar/calendar.module.ts&#10;customermodu&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/customers.module.ts&#10;castmodu&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/casts/casts.module.ts&#10;cast&#9;null&#9;null&#10;castservi&#9;null&#9;null&#10;customerlist&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/customer-list/customer-list.component.ts&#10;castlist&#9;null&#9;null&#10;customer list&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/customer-list/customer-list.component.html&#10;appmo&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/app-routing.module.ts&#10;customerrou&#9;FILE&#9;file:///Users/hikichitsubasa/Dropbox/001Developments/Projects/000Client_Projects/club-management-system/frontend/src/app/views/customers/customers-routing.module.ts" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/views/sp" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -766,12 +676,12 @@
       <workItem from="1552976591029" duration="26058000" />
       <workItem from="1553157497949" duration="54556000" />
       <workItem from="1553519959419" duration="69142000" />
-      <workItem from="1553851675665" duration="3955000" />
+      <workItem from="1553851675665" duration="8908000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235620000" />
+    <option name="totallyTimeSpent" value="240573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="400" y="-1057" width="1920" height="1057" extended-state="6" />
@@ -781,11 +691,12 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10689837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26411074" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4771033" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -793,7 +704,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -810,71 +720,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/views/casts/cast-form/cast-form.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/casts/visit-history/visit-history.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/customers/customers-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/casts/performance-graph/performance-graph.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/casts/page-cast-details/page-cast-details.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/interfaces/customer.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/hole-status/hole-status/hole-status.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="59" column="64" lean-forward="false" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-            <marker date="1553842926015" expanded="true" signature="2620:2634" ph="{&quot;douhanCustomer&quot;: douhanCustomer...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/hole-status/visiting-customer-form/visiting-customer-form.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="61" column="12" lean-forward="true" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/views/customers/page-customer-details/page-customer-details.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1118,14 +963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/calendar/calendar/calendar.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/shared/services/cast.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1143,24 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/sp/sp.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/sp/sp-dashboard/sp-dashboard.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1243,6 +1062,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../999Templates,Modules,Plugins/003Mobile templates/themeforest-22976470-eazy-mobile-mobile-template/EazyMobile/_starter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/sp/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/components/layouts/sp-layout/sp-layout.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app-routing.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1253,21 +1096,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/components/layouts/sp-layout/sp-layout.component.html">
+    <entry file="file://$PROJECT_DIR$/src/app/views/sp/fonts/css/fontawesome-all.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="4" column="1350" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="48464" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/sp/styles/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="60" lean-forward="true" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/sp/styles/framework.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="3163" column="75" lean-forward="true" selection-start-line="3163" selection-start-column="75" selection-end-line="3163" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/sp/sp-dashboard/sp-dashboard.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="31" lean-forward="true" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/views/calendar/calendar/calendar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
+        <state relative-caret-position="1875">
           <caret line="125" column="54" lean-forward="true" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
           <folding>
             <element signature="e#0#74#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/sp/sp-dashboard/sp-dashboard.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="29" lean-forward="true" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/customers/customers.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/calendar/calendar.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="49" column="2" lean-forward="true" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/sp/sp.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1553932744495" expanded="true" signature="290:431" ph="{...}" />
+            <marker date="1553932744495" expanded="true" signature="455:458" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/calendar/calendar/calendar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -11,11 +11,11 @@ import {Router} from "@angular/router";
 export class CustomerListComponent implements OnInit {
     customers: Customer[];
     columns = [
-        {field: 'name', header: 'name', width: '20%'},
-        {field: 'company', header: 'company', width: '30%'},
-        {field: 'birthday', header: 'birthday', width: '10%'},
-        {field: 'phone', header: 'phone', width: '10%'},
-        {field: 'email', header: 'email', width: '20%'},
+        {field: 'name', header: 'お名前', width: '20%'},
+        {field: 'company', header: '会社', width: '30%'},
+        {field: 'birthday', header: 'お誕生日', width: '10%'},
+        {field: 'phone', header: '電話番号', width: '10%'},
+        {field: 'email', header: 'メール', width: '20%'},
     ];
 
     constructor(private customerService: CustomerService,

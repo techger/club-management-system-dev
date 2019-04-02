@@ -1226,7 +1226,7 @@ var AdminLayoutSidebarLargeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main-header\">\n    <div class=\"logo\">\n        <img src=\"./assets/images/logo.png\" alt=\"\">\n    </div>\n\n    <div class=\"menu-toggle\" (click)=\"toggelSidebar()\">\n        <div></div>\n        <div></div>\n        <div></div>\n    </div>\n\n    <div class=\"d-flex align-items-center\">\n        <!-- Mega menu -->\n        <div ngbDropdown class=\"mega-menu d-none d-md-block\">\n            <button ngbDropdownToggle href=\"#\" class=\"btn text-muted dropdown-toggle mr-3\">Mega Menu</button>\n            <div ngbDropdownMenu perfectScrollbar>\n                <div class=\"row m-0\">\n                    <div class=\"col-md-4 p-4 bg-img\">\n                        <h2 class=\"title\">Mega Menu <br> Sidebar</h2>\n                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores natus\n                            laboriosam fugit, consequatur.\n                        </p>\n                        <p class=\"mb-4\">Lorem ipsum dolor sit amet consectetur, adipisicing elit.\n                            Exercitationem odio amet eos dolore suscipit placeat.</p>\n                        <button class=\"btn btn-lg btn-rounded btn-outline-warning\">Learn More</button>\n                    </div>\n                    <div class=\"col-md-4 p-4\">\n                        <p class=\"text-primary text--cap border-bottom-primary d-inline-block\">Features</p>\n                        <div class=\"menu-icon-grid w-auto p-0\">\n                            <a href=\"#\"><i class=\"i-Shop-4\"></i> Home</a>\n                            <a href=\"#\"><i class=\"i-Library\"></i> UI Kits</a>\n                            <a href=\"#\"><i class=\"i-Drop\"></i> Apps</a>\n                            <a href=\"#\"><i class=\"i-File-Clipboard-File--Text\"></i> Forms</a>\n                            <a href=\"#\"><i class=\"i-Checked-User\"></i> Sessions</a>\n                            <a href=\"#\"><i class=\"i-Ambulance\"></i> Support</a>\n                        </div>\n                    </div>\n                    <div class=\"col-md-4 p-4\">\n                        <p class=\"text-primary text--cap border-bottom-primary d-inline-block\">Components</p>\n                        <ul class=\"links\">\n                            <li><a href=\"accordion.html\">Accordion</a></li>\n                            <li><a href=\"alerts.html\">Alerts</a></li>\n                            <li><a href=\"buttons.html\">Buttons</a></li>\n                            <li><a href=\"badges.html\">Badges</a></li>\n                            <li><a href=\"carousel.html\">Carousels</a></li>\n                            <li><a href=\"lists.html\">Lists</a></li>\n                            <li><a href=\"popover.html\">Popover</a></li>\n                            <li><a href=\"tables.html\">Tables</a></li>\n                            <li><a href=\"datatables.html\">Datatables</a></li>\n                            <li><a href=\"modals.html\">Modals</a></li>\n                            <li><a href=\"nouislider.html\">Sliders</a></li>\n                            <li><a href=\"tabs.html\">Tabs</a></li>\n                        </ul>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- Search bar -->\n        <div class=\"search-bar\">\n            <input type=\"text\" placeholder=\"Search\" (focus)=\"searchService.searchOpen = true\">\n            <i class=\"search-icon text-muted i-Magnifi-Glass1\"></i>\n        </div>\n    </div>\n\n    <div style=\"margin: auto\"></div>\n\n    <div class=\"header-part-right\">\n        <i class=\"i-Magnifi-Glass1 header-icon\" role=\"button\" (click)=\"searchService.searchOpen = true\"></i>\n        <i fullScreenWindow class=\"i-Full-Screen header-icon d-none d-sm-inline-block\" role=\"button\"></i>\n        <div ngbDropdown [placement]=\"'bottom-right'\" class=\"d-none d-sm-inline-block\">\n            <i ngbDropdownToggle class=\"i-Gear text-muted header-icon\" role=\"button\"></i>\n            <div ngbDropdownMenu class=\"menu-icon-grid-dropdown\">\n                <div class=\"menu-icon-grid\">\n                    <a href=\"#\"><i class=\"i-Shop-4\"></i> Home</a>\n                    <a href=\"#\"><i class=\"i-Library\"></i> UI Kits</a>\n                    <a href=\"#\"><i class=\"i-Drop\"></i> Apps</a>\n                    <a href=\"#\"><i class=\"i-File-Clipboard-File--Text\"></i> Forms</a>\n                    <a href=\"#\"><i class=\"i-Checked-User\"></i> Sessions</a>\n                    <a href=\"#\"><i class=\"i-Ambulance\"></i> Support</a>\n                </div>\n            </div>\n        </div>\n\n        <div ngbDropdown [placement]=\"'bottom-right'\">\n            <div class=\"badge-top-container\">\n                <span class=\"badge badge-primary\">{{notifications.length}}</span>\n                <i ngbDropdownToggle class=\"i-Bell text-muted header-icon\" role=\"button\"></i>\n            </div>\n            <div ngbDropdownMenu class=\"notification-dropdown rtl-ps-none\" perfectScrollbar>\n                <div class=\"dropdown-item d-flex\" *ngFor=\"let item of notifications\" [routerLink]=\"[item.link]\">\n                    <div class=\"notification-icon\">\n                        <i class=\"{{item.icon}} text-{{item.status}} mr-1\"></i>\n                    </div>\n                    <div class=\"notification-details flex-grow-1\">\n                        <p class=\"m-0 d-flex align-items-center\">\n                            <span>{{item.title}}</span>\n                            <span *ngIf=\"item.badge\" class=\"badge badge-pill badge-{{item.status}} ml-1 mr-1\">{{item.badge}}</span>\n                            <span class=\"flex-grow-1\"></span>\n                            <span class=\"text-small text-muted ml-auto\">{{item.time | relativeTime}}</span>\n                        </p>\n                        <p class=\"text-small text-muted m-0\">{{item.text | excerpt:30}}</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <div ngbDropdown [placement]=\"'bottom-right'\" class=\"user col align-self-end\">\n            <img src=\"./assets/images/faces/1.jpg\" id=\"userDropdown\" ngbDropdownToggle alt=\"\">\n\n            <div ngbDropdownMenu aria-labelledby=\"userDropdown\" class=\"header-account-dropdown\">\n                <div class=\"dropdown-header\">\n                    <i class=\"i-Lock-User mr-1\"></i> Timothy Carlson\n                </div>\n                <button class=\"dropdown-item\">Account settings</button>\n                <button class=\"dropdown-item\">Billing history</button>\n                <button class=\"dropdown-item\" (click)=\"signout()\">Sign out</button>\n            </div>\n        </div>\n\n    </div>\n\n</div>"
+module.exports = "<div class=\"main-header\">\n    <div class=\"logo\">\n        <img src=\"./assets/images/logo.png\" alt=\"\">\n    </div>\n\n    <!--<div class=\"menu-toggle\" (click)=\"toggelSidebar()\">-->\n        <!--<div></div>-->\n        <!--<div></div>-->\n        <!--<div></div>-->\n    <!--</div>-->\n\n    <div class=\"d-flex align-items-center\">\n        <!-- Mega menu -->\n        <!--<div ngbDropdown class=\"mega-menu d-none d-md-block\">-->\n            <!--<button ngbDropdownToggle href=\"#\" class=\"btn text-muted dropdown-toggle mr-3\">Mega Menu</button>-->\n            <!--<div ngbDropdownMenu perfectScrollbar>-->\n                <!--<div class=\"row m-0\">-->\n                    <!--<div class=\"col-md-4 p-4 bg-img\">-->\n                        <!--<h2 class=\"title\">Mega Menu <br> Sidebar</h2>-->\n                        <!--<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores natus-->\n                            <!--laboriosam fugit, consequatur.-->\n                        <!--</p>-->\n                        <!--<p class=\"mb-4\">Lorem ipsum dolor sit amet consectetur, adipisicing elit.-->\n                            <!--Exercitationem odio amet eos dolore suscipit placeat.</p>-->\n                        <!--<button class=\"btn btn-lg btn-rounded btn-outline-warning\">Learn More</button>-->\n                    <!--</div>-->\n                    <!--<div class=\"col-md-4 p-4\">-->\n                        <!--<p class=\"text-primary text&#45;&#45;cap border-bottom-primary d-inline-block\">Features</p>-->\n                        <!--<div class=\"menu-icon-grid w-auto p-0\">-->\n                            <!--<a href=\"#\"><i class=\"i-Shop-4\"></i> Home</a>-->\n                            <!--<a href=\"#\"><i class=\"i-Library\"></i> UI Kits</a>-->\n                            <!--<a href=\"#\"><i class=\"i-Drop\"></i> Apps</a>-->\n                            <!--<a href=\"#\"><i class=\"i-File-Clipboard-File&#45;&#45;Text\"></i> Forms</a>-->\n                            <!--<a href=\"#\"><i class=\"i-Checked-User\"></i> Sessions</a>-->\n                            <!--<a href=\"#\"><i class=\"i-Ambulance\"></i> Support</a>-->\n                        <!--</div>-->\n                    <!--</div>-->\n                    <!--<div class=\"col-md-4 p-4\">-->\n                        <!--<p class=\"text-primary text&#45;&#45;cap border-bottom-primary d-inline-block\">Components</p>-->\n                        <!--<ul class=\"links\">-->\n                            <!--<li><a href=\"accordion.html\">Accordion</a></li>-->\n                            <!--<li><a href=\"alerts.html\">Alerts</a></li>-->\n                            <!--<li><a href=\"buttons.html\">Buttons</a></li>-->\n                            <!--<li><a href=\"badges.html\">Badges</a></li>-->\n                            <!--<li><a href=\"carousel.html\">Carousels</a></li>-->\n                            <!--<li><a href=\"lists.html\">Lists</a></li>-->\n                            <!--<li><a href=\"popover.html\">Popover</a></li>-->\n                            <!--<li><a href=\"tables.html\">Tables</a></li>-->\n                            <!--<li><a href=\"datatables.html\">Datatables</a></li>-->\n                            <!--<li><a href=\"modals.html\">Modals</a></li>-->\n                            <!--<li><a href=\"nouislider.html\">Sliders</a></li>-->\n                            <!--<li><a href=\"tabs.html\">Tabs</a></li>-->\n                        <!--</ul>-->\n                    <!--</div>-->\n                <!--</div>-->\n            <!--</div>-->\n        <!--</div>-->\n        <!-- Search bar -->\n        <!--<div class=\"search-bar\">-->\n            <!--<input type=\"text\" placeholder=\"Search\" (focus)=\"searchService.searchOpen = true\">-->\n            <!--<i class=\"search-icon text-muted i-Magnifi-Glass1\"></i>-->\n        <!--</div>-->\n    </div>\n\n    <div style=\"margin: auto\"></div>\n\n    <!--<div class=\"header-part-right\">-->\n        <!--<i class=\"i-Magnifi-Glass1 header-icon\" role=\"button\" (click)=\"searchService.searchOpen = true\"></i>-->\n        <!--<i fullScreenWindow class=\"i-Full-Screen header-icon d-none d-sm-inline-block\" role=\"button\"></i>-->\n        <!--<div ngbDropdown [placement]=\"'bottom-right'\" class=\"d-none d-sm-inline-block\">-->\n            <!--<i ngbDropdownToggle class=\"i-Gear text-muted header-icon\" role=\"button\"></i>-->\n            <!--<div ngbDropdownMenu class=\"menu-icon-grid-dropdown\">-->\n                <!--<div class=\"menu-icon-grid\">-->\n                    <!--<a href=\"#\"><i class=\"i-Shop-4\"></i> Home</a>-->\n                    <!--<a href=\"#\"><i class=\"i-Library\"></i> UI Kits</a>-->\n                    <!--<a href=\"#\"><i class=\"i-Drop\"></i> Apps</a>-->\n                    <!--<a href=\"#\"><i class=\"i-File-Clipboard-File&#45;&#45;Text\"></i> Forms</a>-->\n                    <!--<a href=\"#\"><i class=\"i-Checked-User\"></i> Sessions</a>-->\n                    <!--<a href=\"#\"><i class=\"i-Ambulance\"></i> Support</a>-->\n                <!--</div>-->\n            <!--</div>-->\n        <!--</div>-->\n\n        <!--<div ngbDropdown [placement]=\"'bottom-right'\">-->\n            <!--<div class=\"badge-top-container\">-->\n                <!--<span class=\"badge badge-primary\">{{notifications.length}}</span>-->\n                <!--<i ngbDropdownToggle class=\"i-Bell text-muted header-icon\" role=\"button\"></i>-->\n            <!--</div>-->\n            <!--<div ngbDropdownMenu class=\"notification-dropdown rtl-ps-none\" perfectScrollbar>-->\n                <!--<div class=\"dropdown-item d-flex\" *ngFor=\"let item of notifications\" [routerLink]=\"[item.link]\">-->\n                    <!--<div class=\"notification-icon\">-->\n                        <!--<i class=\"{{item.icon}} text-{{item.status}} mr-1\"></i>-->\n                    <!--</div>-->\n                    <!--<div class=\"notification-details flex-grow-1\">-->\n                        <!--<p class=\"m-0 d-flex align-items-center\">-->\n                            <!--<span>{{item.title}}</span>-->\n                            <!--<span *ngIf=\"item.badge\" class=\"badge badge-pill badge-{{item.status}} ml-1 mr-1\">{{item.badge}}</span>-->\n                            <!--<span class=\"flex-grow-1\"></span>-->\n                            <!--<span class=\"text-small text-muted ml-auto\">{{item.time | relativeTime}}</span>-->\n                        <!--</p>-->\n                        <!--<p class=\"text-small text-muted m-0\">{{item.text | excerpt:30}}</p>-->\n                    <!--</div>-->\n                <!--</div>-->\n            <!--</div>-->\n        <!--</div>-->\n\n        <!--<div ngbDropdown [placement]=\"'bottom-right'\" class=\"user col align-self-end\">-->\n            <!--<img src=\"./assets/images/faces/1.jpg\" id=\"userDropdown\" ngbDropdownToggle alt=\"\">-->\n\n            <!--<div ngbDropdownMenu aria-labelledby=\"userDropdown\" class=\"header-account-dropdown\">-->\n                <!--<div class=\"dropdown-header\">-->\n                    <!--<i class=\"i-Lock-User mr-1\"></i> Timothy Carlson-->\n                <!--</div>-->\n                <!--<button class=\"dropdown-item\">Account settings</button>-->\n                <!--<button class=\"dropdown-item\">Billing history</button>-->\n                <!--<button class=\"dropdown-item\" (click)=\"signout()\">Sign out</button>-->\n            <!--</div>-->\n        <!--</div>-->\n\n    <!--</div>-->\n\n</div>"
 
 /***/ }),
 
@@ -4479,13 +4479,22 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var CustomerService = /** @class */ (function () {
     function CustomerService() {
     }
+    /**
+     * @return customer data filtered by customer ID
+     * */
     CustomerService.prototype.findCustomer = function (customerId) {
         var customers = this.getCustomerList();
         return customers.find(function (customer) { return customer.customerId === customerId; });
     };
+    /**
+     * can be deleted this func
+     * */
     CustomerService.prototype.setCustomer = function () {
         return this.customer;
     };
+    /**
+     * @return [ {label: 'string', value: number}, ]
+     * */
     CustomerService.prototype.getCustomerOptions = function () {
         return [
             { label: '林', value: 1 },
@@ -4539,62 +4548,87 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2019-01-10",
                 "customerName": "Dennis Giles",
+                "customerId": 2,
                 "accountCastId": 10,
+                "accountCast": 'まま',
+                "douhanCasts": 'まい、めぐみ',
                 "total": 91858,
                 "numberOfCustomer": 2
             },
             {
                 "entryDate": "2018-01-30",
                 "customerName": "Stark Walters",
+                "customerId": 2,
                 "accountCastId": 7,
+                "accountCast": 'まま',
+                "douhanCasts": 'まい、めぐみ',
                 "total": 134655,
                 "numberOfCustomer": 6
             },
             {
                 "entryDate": "2018-10-20",
                 "customerName": "Preston Ewing",
+                "customerId": 2,
                 "accountCastId": 2,
+                "accountCast": 'まま',
+                "douhanCasts": 'まい、めぐみ',
                 "total": 144161,
                 "numberOfCustomer": 6
             },
             {
                 "entryDate": "2018-10-03",
                 "customerName": "Spears Gay",
+                "customerId": 2,
                 "accountCastId": 10,
+                "accountCast": 'まま',
+                "douhanCasts": 'まい、めぐみ',
                 "total": 17939,
                 "numberOfCustomer": 5
             },
             {
                 "entryDate": "2018-12-12",
                 "customerName": "Sutton Casey",
+                "customerId": 2,
                 "accountCastId": 5,
+                "accountCast": 'まま',
+                "douhanCasts": 'まい、めぐみ',
                 "total": 180466,
                 "numberOfCustomer": 9
             },
             {
                 "entryDate": "2018-01-01",
                 "customerName": "Adrian Velazquez",
+                "customerId": 2,
                 "accountCastId": 5,
+                "accountCast": 'まま',
+                "douhanCasts": 'まい、めぐみ',
                 "total": 197505,
                 "numberOfCustomer": 8
             },
             {
                 "entryDate": "2018-08-13",
                 "customerName": "Dominique Hatfield",
+                "customerId": 2,
                 "accountCastId": 6,
+                "accountCast": 'まま',
+                "douhanCasts": 'まい、めぐみ',
                 "total": 15835,
                 "numberOfCustomer": 3
             },
             {
                 "entryDate": "2019-01-24",
                 "customerName": "Winters Alexander",
+                "customerId": 2,
                 "accountCastId": 2,
+                "accountCast": 'まま',
+                "douhanCasts": 'まい、めぐみ',
                 "total": 57639,
                 "numberOfCustomer": 1
             },
             {
                 "entryDate": "2019-02-15",
                 "customerName": "Macdonald Shannon",
+                "customerId": 2,
                 "accountCastId": 3,
                 "total": 52381,
                 "numberOfCustomer": 3
@@ -4602,6 +4636,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-04-09",
                 "customerName": "Eileen Mcgowan",
+                "customerId": 2,
                 "accountCastId": 3,
                 "total": 106889,
                 "numberOfCustomer": 9
@@ -4609,6 +4644,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-05-12",
                 "customerName": "Alexandria Whitney",
+                "customerId": 2,
                 "accountCastId": 3,
                 "total": 71867,
                 "numberOfCustomer": 2
@@ -4616,6 +4652,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2019-01-06",
                 "customerName": "Annmarie Stone",
+                "customerId": 2,
                 "accountCastId": 8,
                 "total": 90498,
                 "numberOfCustomer": 7
@@ -4623,6 +4660,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-02-11",
                 "customerName": "Vaughn Rivas",
+                "customerId": 2,
                 "accountCastId": 2,
                 "total": 77958,
                 "numberOfCustomer": 6
@@ -4630,6 +4668,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-03-19",
                 "customerName": "Prince Wilkerson",
+                "customerId": 2,
                 "accountCastId": 7,
                 "total": 144808,
                 "numberOfCustomer": 4
@@ -4637,6 +4676,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2019-03-14",
                 "customerName": "Pierce Ross",
+                "customerId": 2,
                 "accountCastId": 8,
                 "total": 49262,
                 "numberOfCustomer": 1
@@ -4644,6 +4684,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-08-22",
                 "customerName": "Alvarado Hyde",
+                "customerId": 2,
                 "accountCastId": 5,
                 "total": 89927,
                 "numberOfCustomer": 8
@@ -4651,6 +4692,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-10-04",
                 "customerName": "Gilbert Holden",
+                "customerId": 2,
                 "accountCastId": 8,
                 "total": 26235,
                 "numberOfCustomer": 8
@@ -4658,6 +4700,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-11-20",
                 "customerName": "Elva Greer",
+                "customerId": 2,
                 "accountCastId": 4,
                 "total": 159212,
                 "numberOfCustomer": 5
@@ -4665,6 +4708,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-05-07",
                 "customerName": "Lane Sloan",
+                "customerId": 2,
                 "accountCastId": 1,
                 "total": 170346,
                 "numberOfCustomer": 1
@@ -4672,6 +4716,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2019-02-01",
                 "customerName": "Hunter Kirkland",
+                "customerId": 2,
                 "accountCastId": 4,
                 "total": 129780,
                 "numberOfCustomer": 6
@@ -4679,6 +4724,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-11-09",
                 "customerName": "Trudy Alvarado",
+                "customerId": 2,
                 "accountCastId": 8,
                 "total": 63217,
                 "numberOfCustomer": 9
@@ -4686,6 +4732,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2019-02-08",
                 "customerName": "Carlene Glenn",
+                "customerId": 2,
                 "accountCastId": 3,
                 "total": 93956,
                 "numberOfCustomer": 4
@@ -4693,6 +4740,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-10-19",
                 "customerName": "Holloway Levine",
+                "customerId": 2,
                 "accountCastId": 10,
                 "total": 86051,
                 "numberOfCustomer": 4
@@ -4700,6 +4748,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-10-26",
                 "customerName": "Haley Mcguire",
+                "customerId": 2,
                 "accountCastId": 4,
                 "total": 188940,
                 "numberOfCustomer": 2
@@ -4707,6 +4756,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-03-18",
                 "customerName": "Wong Booth",
+                "customerId": 2,
                 "accountCastId": 3,
                 "total": 192445,
                 "numberOfCustomer": 8
@@ -4714,6 +4764,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2019-02-28",
                 "customerName": "Ida Hunter",
+                "customerId": 2,
                 "accountCastId": 4,
                 "total": 197390,
                 "numberOfCustomer": 1
@@ -4721,6 +4772,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-09-03",
                 "customerName": "Darla Ruiz",
+                "customerId": 2,
                 "accountCastId": 7,
                 "total": 39134,
                 "numberOfCustomer": 5
@@ -4728,6 +4780,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-10-09",
                 "customerName": "Natalie Craft",
+                "customerId": 2,
                 "accountCastId": 5,
                 "total": 176723,
                 "numberOfCustomer": 10
@@ -4735,6 +4788,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-01-24",
                 "customerName": "Goodman Charles",
+                "customerId": 2,
                 "accountCastId": 2,
                 "total": 86979,
                 "numberOfCustomer": 9
@@ -4742,6 +4796,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2019-01-30",
                 "customerName": "Dollie Harvey",
+                "customerId": 2,
                 "accountCastId": 6,
                 "total": 128596,
                 "numberOfCustomer": 10
@@ -4749,6 +4804,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-09-07",
                 "customerName": "Grant Hicks",
+                "customerId": 2,
                 "accountCastId": 7,
                 "total": 180077,
                 "numberOfCustomer": 7
@@ -4756,6 +4812,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2019-01-01",
                 "customerName": "Guy Conner",
+                "customerId": 2,
                 "accountCastId": 7,
                 "total": 56710,
                 "numberOfCustomer": 4
@@ -4763,6 +4820,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2019-03-06",
                 "customerName": "Holcomb Roman",
+                "customerId": 2,
                 "accountCastId": 3,
                 "total": 198866,
                 "numberOfCustomer": 4
@@ -4770,6 +4828,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-01-19",
                 "customerName": "Daniel Ferguson",
+                "customerId": 2,
                 "accountCastId": 6,
                 "total": 199210,
                 "numberOfCustomer": 10
@@ -4777,6 +4836,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-01-19",
                 "customerName": "Haney Patel",
+                "customerId": 2,
                 "accountCastId": 9,
                 "total": 24698,
                 "numberOfCustomer": 1
@@ -4784,6 +4844,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-07-07",
                 "customerName": "Rivers Berger",
+                "customerId": 2,
                 "accountCastId": 5,
                 "total": 32234,
                 "numberOfCustomer": 8
@@ -4791,6 +4852,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-05-24",
                 "customerName": "Greta Spencer",
+                "customerId": 2,
                 "accountCastId": 3,
                 "total": 178899,
                 "numberOfCustomer": 2
@@ -4798,6 +4860,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-12-02",
                 "customerName": "Clements Franks",
+                "customerId": 2,
                 "accountCastId": 3,
                 "total": 50290,
                 "numberOfCustomer": 9
@@ -4805,6 +4868,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-05-18",
                 "customerName": "Perkins Garcia",
+                "customerId": 2,
                 "accountCastId": 8,
                 "total": 34717,
                 "numberOfCustomer": 7
@@ -4812,6 +4876,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-11-22",
                 "customerName": "Petra Huber",
+                "customerId": 2,
                 "accountCastId": 9,
                 "total": 86210,
                 "numberOfCustomer": 4
@@ -4819,6 +4884,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-01-13",
                 "customerName": "Annie Bullock",
+                "customerId": 2,
                 "accountCastId": 10,
                 "total": 99332,
                 "numberOfCustomer": 7
@@ -4826,6 +4892,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-10-27",
                 "customerName": "Dickson Crane",
+                "customerId": 2,
                 "accountCastId": 8,
                 "total": 172902,
                 "numberOfCustomer": 10
@@ -4833,6 +4900,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-04-08",
                 "customerName": "Sofia Abbott",
+                "customerId": 2,
                 "accountCastId": 7,
                 "total": 182318,
                 "numberOfCustomer": 4
@@ -4840,6 +4908,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-09-02",
                 "customerName": "Hobbs Bowman",
+                "customerId": 2,
                 "accountCastId": 7,
                 "total": 131158,
                 "numberOfCustomer": 1
@@ -4847,6 +4916,7 @@ var CustomerService = /** @class */ (function () {
             {
                 "entryDate": "2018-12-17",
                 "customerName": "Cantu Koch",
+                "customerId": 2,
                 "accountCastId": 10,
                 "total": 91733,
                 "numberOfCustomer": 5
@@ -5115,9 +5185,9 @@ var CustomerService = /** @class */ (function () {
         return [
             {
                 "customerId": 0,
-                "name": "Roberson Beard",
+                "name": "相葉雅紀",
                 "nameKana": "Adrian Adams",
-                "company": "GUSHKOOL",
+                "company": "NIKE",
                 "client": "QUADEEBO",
                 "anniversaryOfCompany": "2014-05-01",
                 "phone": "090 (817) 414-2082",
@@ -5153,9 +5223,9 @@ var CustomerService = /** @class */ (function () {
             },
             {
                 "customerId": 1,
-                "name": "Alexandra Love",
+                "name": "赤西仁",
                 "nameKana": "Elva Crawford",
-                "company": "SUPREMIA",
+                "company": "adidas",
                 "client": "ZANYMAX",
                 "anniversaryOfCompany": "2017-10-04",
                 "phone": "090 (925) 525-3438",
@@ -5191,9 +5261,9 @@ var CustomerService = /** @class */ (function () {
             },
             {
                 "customerId": 2,
-                "name": "Miriam Moss",
+                "name": "浅野忠信",
                 "nameKana": "Bentley Nicholson",
-                "company": "VANTAGE",
+                "company": "Coca-Cola",
                 "client": "EARBANG",
                 "anniversaryOfCompany": "2017-07-14",
                 "phone": "090 (996) 410-3375",
@@ -5229,9 +5299,9 @@ var CustomerService = /** @class */ (function () {
             },
             {
                 "customerId": 3,
-                "name": "Erica Dunn",
+                "name": "阿部寛",
                 "nameKana": "Lola Mccoy",
-                "company": "CUBICIDE",
+                "company": "Pepsi",
                 "client": "OBLIQ",
                 "anniversaryOfCompany": "2018-02-11",
                 "phone": "090 (903) 441-2278",
@@ -5267,9 +5337,9 @@ var CustomerService = /** @class */ (function () {
             },
             {
                 "customerId": 4,
-                "name": "Ruth Welch",
+                "name": "綾野剛",
                 "nameKana": "Chandra Boyle",
-                "company": "NAVIR",
+                "company": "Canon",
                 "client": "MAROPTIC",
                 "anniversaryOfCompany": "2017-03-13",
                 "phone": "090 (841) 498-3933",
@@ -5305,9 +5375,9 @@ var CustomerService = /** @class */ (function () {
             },
             {
                 "customerId": 5,
-                "name": "Bullock Hodge",
+                "name": "安藤政信",
                 "nameKana": "Meagan Ross",
-                "company": "PROSURE",
+                "company": "Nikon",
                 "client": "DIGIFAD",
                 "anniversaryOfCompany": "2014-07-04",
                 "phone": "090 (873) 404-2178",
@@ -5343,9 +5413,9 @@ var CustomerService = /** @class */ (function () {
             },
             {
                 "customerId": 6,
-                "name": "Robertson Clay",
+                "name": "生田斗真",
                 "nameKana": "Winters Parks",
-                "company": "OPTYK",
+                "company": "Adobe",
                 "client": "PYRAMIA",
                 "anniversaryOfCompany": "2014-07-22",
                 "phone": "090 (849) 590-3940",
@@ -5381,9 +5451,9 @@ var CustomerService = /** @class */ (function () {
             },
             {
                 "customerId": 7,
-                "name": "Abby Morrison",
+                "name": "池松壮亮",
                 "nameKana": "Liza Reeves",
-                "company": "ROCKLOGIC",
+                "company": "Amazon",
                 "client": "ENOMEN",
                 "anniversaryOfCompany": "2016-02-29",
                 "phone": "090 (878) 458-2638",
@@ -5419,9 +5489,9 @@ var CustomerService = /** @class */ (function () {
             },
             {
                 "customerId": 8,
-                "name": "Brooke Warren",
+                "name": "伊勢谷友介",
                 "nameKana": "Sweet Doyle",
-                "company": "XYLAR",
+                "company": "Audi",
                 "client": "KYAGORO",
                 "anniversaryOfCompany": "2018-01-29",
                 "phone": "090 (858) 479-2197",
@@ -5457,9 +5527,9 @@ var CustomerService = /** @class */ (function () {
             },
             {
                 "customerId": 9,
-                "name": "Elba Murphy",
+                "name": "市川海老蔵",
                 "nameKana": "Hinton Leonard",
-                "company": "ENORMO",
+                "company": "SEGA",
                 "client": "BESTO",
                 "anniversaryOfCompany": "2015-05-31",
                 "phone": "090 (954) 418-3384",
@@ -5495,9 +5565,9 @@ var CustomerService = /** @class */ (function () {
             },
             {
                 "customerId": 10,
-                "name": "Celeste Dawson",
+                "name": "市原隼人",
                 "nameKana": "Colette Pruitt",
-                "company": "SUPPORTAL",
+                "company": "Starbucks",
                 "client": "RUGSTARS",
                 "anniversaryOfCompany": "2014-10-03",
                 "phone": "090 (919) 407-2506",
@@ -39959,127 +40029,6 @@ var NavigationService = /** @class */ (function () {
                 icon: 'i-Assistant',
                 state: '/cast-list'
             },
-            {
-                name: 'Dashboard',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-                type: 'dropDown',
-                icon: 'i-Bar-Chart',
-                sub: [
-                    { icon: 'i-Clock-3', name: 'Version 1', state: '/dashboard/v1', type: 'link' },
-                    { icon: 'i-Clock-4', name: 'Version 2', state: '/dashboard/v2', type: 'link' },
-                    { icon: 'i-Over-Time', name: 'Version 3', state: '/dashboard/v3', type: 'link' },
-                    { icon: 'i-Clock', name: 'Version 4', state: '/dashboard/v4', type: 'link' },
-                ]
-            },
-            {
-                name: 'UI kits',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
-                type: 'dropDown',
-                icon: 'i-Library',
-                sub: [
-                    { icon: 'i-Bell', name: 'Alerts', state: '/uikits/alerts', type: 'link' },
-                    { icon: 'i-Split-Horizontal-2-Window', name: 'Accordions', state: '/uikits/accordions', type: 'link' },
-                    { icon: 'i-Medal-2', name: 'Badges', state: '/uikits/badges', type: 'link' },
-                    {
-                        icon: 'i-Arrow-Right-in-Circle',
-                        name: 'Buttons',
-                        type: 'dropDown',
-                        sub: [
-                            { name: 'Bootstrap Buttons', state: '/uikits/buttons', type: 'link' },
-                            { name: 'Loding Buttons', state: '/uikits/buttons-loading', type: 'link' }
-                        ]
-                    },
-                    { icon: 'i-ID-Card', name: 'Cards', state: '/uikits/cards', type: 'link' },
-                    { icon: 'i-Line-Chart-2', name: 'Cards metrics', state: '/uikits/cards-metrics', type: 'link' },
-                    { icon: 'i-Credit-Card', name: 'Cards widget', state: '/uikits/cards-widget', type: 'link' },
-                    { icon: 'i-Full-Cart', name: 'Cards ecommerce', state: '/uikits/cards-ecommerce', type: 'link' },
-                    { icon: 'i-Duplicate-Window', name: 'Modals', state: '/uikits/modals', type: 'link' },
-                    { icon: 'i-Speach-Bubble-3', name: 'Popover', state: '/uikits/popover', type: 'link' },
-                    { icon: 'i-Like', name: 'Rating', state: '/uikits/rating', type: 'link' },
-                    { icon: 'i-Loading-3', name: 'Loaders', state: '/uikits/loaders', type: 'link' },
-                ]
-            },
-            {
-                name: 'Apps',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-                type: 'dropDown',
-                icon: 'i-Computer-Secure',
-                sub: [
-                    { icon: 'i-Add-File', name: 'Invoice Builder', state: '/invoice', type: 'link' },
-                    { icon: 'i-Email', name: 'Inbox', state: '/inbox', type: 'link' },
-                    { icon: 'i-Speach-Bubble-3', name: 'Chat', state: '/chat', type: 'link' },
-                ]
-            },
-            {
-                name: 'Forms',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-                type: 'dropDown',
-                icon: 'i-File-Clipboard-File--Text',
-                sub: [
-                    { icon: 'i-File-Clipboard-Text--Image', name: 'Basic components', state: '/forms/basic', type: 'link' },
-                    { icon: 'i-Split-Vertical', name: 'Form layouts', state: '/forms/layouts', type: 'link' },
-                    { icon: 'i-Receipt-4', name: 'Input Group', state: '/forms/input-group', type: 'link' },
-                    { icon: 'i-File-Edit', name: 'Input Mask', state: '/forms/input-mask', type: 'link' },
-                    { icon: 'i-Tag-2', name: 'Tag Input', state: '/forms/tag-input', type: 'link' },
-                    { icon: 'i-Width-Window', name: 'Wizard', state: '/forms/wizard', type: 'link' },
-                    { icon: 'i-Crop-2', name: 'Image Cropper', state: '/forms/img-cropper', type: 'link' },
-                ]
-            },
-            {
-                name: 'Data Tables',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-                type: 'dropDown',
-                icon: 'i-File-Horizontal-Text',
-                sub: [
-                    { icon: 'i-File-Horizontal-Text', name: 'List', state: '/tables/list', type: 'link' },
-                    { icon: 'i-Full-View-Window', name: 'Fullscreen', state: '/tables/full', type: 'link' },
-                    { icon: 'i-Code-Window', name: 'Paging', state: '/tables/paging', type: 'link' },
-                    { icon: 'i-Filter-2', name: 'Filter', state: '/tables/filter', type: 'link' },
-                ]
-            },
-            {
-                name: 'Sessions',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-                type: 'dropDown',
-                icon: 'i-Administrator',
-                sub: [
-                    { icon: 'i-Add-User', name: 'Sign up', state: '/sessions/signup', type: 'link' },
-                    { icon: 'i-Checked-User', name: 'Sign in', state: '/sessions/signin', type: 'link' },
-                    { icon: 'i-Find-User', name: 'Forgot', state: '/sessions/forgot', type: 'link' }
-                ]
-            },
-            {
-                name: 'Pages',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-                type: 'dropDown',
-                icon: 'i-Windows-2',
-                sub: [
-                    { icon: 'i-Male', name: 'User Profile', state: '/pages/profile', type: 'link' }
-                ]
-            },
-            {
-                name: 'Icons',
-                description: '600+ premium icons',
-                type: 'link',
-                icon: 'i-Cloud-Sun',
-                state: '/icons/iconsmind'
-            },
-            {
-                name: 'Others',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-                type: 'dropDown',
-                icon: 'i-Double-Tap',
-                sub: [
-                    { icon: 'i-Error-404-Window', name: 'Not found', state: '/others/404', type: 'link' }
-                ]
-            },
-            {
-                name: 'Doc',
-                type: 'extLink',
-                tooltip: 'Documentation',
-                icon: 'i-Safe-Box1',
-                state: 'http://demos.ui-lib.com/gull-doc'
-            }
         ];
         // sets iconMenu as default;
         this.menuItems = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](this.defaultMenu);
@@ -40354,40 +40303,76 @@ var CustomerDetailsFormComponent = /** @class */ (function () {
     }
     CustomerDetailsFormComponent.prototype.ngOnInit = function () {
         console.log(this.customer);
-        this.customerDetailsForm = this.buildCustomerDetailsForm(this.customerDetailsForm);
+        console.log(this.customerDetailsForm);
+        this.customerDetailsForm = this.buildCustomerDetailsForm(this.customer);
     };
-    CustomerDetailsFormComponent.prototype.buildCustomerDetailsForm = function (customerDetailsForm) {
+    CustomerDetailsFormComponent.prototype.buildCustomerDetailsForm = function (customerDetails) {
+        if (customerDetails === void 0) { customerDetails = {}; }
+        if (this.customer !== undefined) {
+            return new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
+                name: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.name || this.customer.name),
+                nameKana: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.nameKana || this.customer.nameKana),
+                phone: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.phone || this.customer.phone),
+                email: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.email || this.customer.email),
+                lineId: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.lineId || this.customer.lineId),
+                girlfriend: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.girlfriend || this.customer.girlfriend),
+                birthday: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.birthday || this.customer.birthday),
+                birthdayPresent: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.birthdayPresent || this.customer.birthdayPresent),
+                birthPlace: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.birthPlace),
+                feature: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.feature),
+                tabacco: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.tabacco),
+                doGolf: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.doGolf),
+                commonThings: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.commonThings),
+                note: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.note),
+                company: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.company),
+                client: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.client),
+                anniversaryOfCompany: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.anniversaryOfCompany),
+                summerGift: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.summerGift),
+                yearEndGift: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.yearEndGift),
+                size: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.size),
+                favoriteDrink: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.favoriteDrink),
+                unfavoriteDrink: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.unfavoriteDrink),
+                favoriteSports: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.favoriteSports),
+                unfavoriteSports: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.unfavoriteSports),
+                favoriteWoman: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.favoriteWoman),
+                unfavoriteWoman: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.unfavoriteWoman),
+                favoriteColor: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.favoriteColor),
+                unfavoriteColor: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.unfavoriteColor),
+                favoriteBrand: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.favoriteBrand),
+                unfavoriteBrand: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.unfavoriteBrand),
+            });
+        }
         return new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
-            name: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.name || this.customer.name),
-            nameKana: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.nameKana || this.customer.nameKana),
-            phone: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.phone || this.customer.phone),
-            email: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.email || this.customer.email),
-            lineId: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.lineId || this.customer.lineId),
-            girlfriend: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.girlfriend || this.customer.girlfriend),
-            birthday: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.birthday || this.customer.birthday),
-            birthdayPresent: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.birthdayPresent || this.customer.birthdayPresent),
-            birthPlace: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.birthPlace),
-            feature: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.feature),
-            tabacco: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.tabacco),
-            doGolf: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.doGolf),
-            commonThings: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.commonThings),
-            note: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.note),
-            company: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.company),
-            client: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.client),
-            anniversaryOfCompany: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.anniversaryOfCompany),
-            summerGift: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.summerGift),
-            yearEndGift: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.yearEndGift),
-            size: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.size),
-            favoriteDrink: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.favoriteDrink),
-            unfavoriteDrink: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.unfavoriteDrink),
-            favoriteSports: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.favoriteSports),
-            unfavoriteSports: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.unfavoriteSports),
-            favoriteWoman: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.favoriteWoman),
-            unfavoriteWoman: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.unfavoriteWoman),
-            favoriteColor: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.favoriteColor),
-            unfavoriteColor: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.unfavoriteColor),
-            favoriteBrand: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.favoriteBrand),
-            unfavoriteBrand: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetailsForm.unfavoriteBrand),
+            name: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.name),
+            nameKana: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.nameKana),
+            phone: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.phone),
+            email: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.email),
+            lineId: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.lineId),
+            girlfriend: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.girlfriend),
+            birthday: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.birthday),
+            birthdayPresent: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.birthdayPresent),
+            birthPlace: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.birthPlace),
+            feature: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.feature),
+            tabacco: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.tabacco),
+            doGolf: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.doGolf),
+            commonThings: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.commonThings),
+            note: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.note),
+            company: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.company),
+            client: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.client),
+            anniversaryOfCompany: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.anniversaryOfCompany),
+            summerGift: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.summerGift),
+            yearEndGift: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.yearEndGift),
+            size: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.size),
+            favoriteDrink: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.favoriteDrink),
+            unfavoriteDrink: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.unfavoriteDrink),
+            favoriteSports: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.favoriteSports),
+            unfavoriteSports: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.unfavoriteSports),
+            favoriteWoman: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.favoriteWoman),
+            unfavoriteWoman: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.unfavoriteWoman),
+            favoriteColor: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.favoriteColor),
+            unfavoriteColor: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.unfavoriteColor),
+            favoriteBrand: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.favoriteBrand),
+            unfavoriteBrand: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](customerDetails.unfavoriteBrand),
         });
     };
     CustomerDetailsFormComponent.prototype.submitCustomerDetailsForm = function (formData) {
@@ -40557,11 +40542,11 @@ var CustomerListComponent = /** @class */ (function () {
         this.customerService = customerService;
         this.router = router;
         this.columns = [
-            { field: 'name', header: 'name', width: '20%' },
-            { field: 'company', header: 'company', width: '30%' },
-            { field: 'birthday', header: 'birthday', width: '10%' },
-            { field: 'phone', header: 'phone', width: '10%' },
-            { field: 'email', header: 'email', width: '20%' },
+            { field: 'name', header: 'お名前', width: '20%' },
+            { field: 'company', header: '会社', width: '30%' },
+            { field: 'birthday', header: 'お誕生日', width: '10%' },
+            { field: 'phone', header: '電話番号', width: '10%' },
+            { field: 'email', header: 'メール', width: '20%' },
         ];
     }
     CustomerListComponent.prototype.ngOnInit = function () {
@@ -40581,6 +40566,96 @@ var CustomerListComponent = /** @class */ (function () {
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], CustomerListComponent);
     return CustomerListComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/views/customers/customer-visit-history/customer-visit-history.component.html":
+/*!**********************************************************************************************!*\
+  !*** ./src/app/views/customers/customer-visit-history/customer-visit-history.component.html ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ngx-datatable\n        #customerVisitHistoryTable\n        class='material expandable'\n        [columnMode]=\"'standard'\"\n        [headerHeight]=\"50\"\n        [footerHeight]=\"50\"\n        [rowHeight]=\"50\"\n        [scrollbarV]=\"true\"\n        [rows]='customerVisitHistoryRows'\n        (page)=\"onPage($event)\">\n\n  <!-- Row Detail Template -->\n  <ngx-datatable-row-detail [rowHeight]=\"100\" #myDetailRow (toggle)=\"onDetailToggle($event)\">\n    <ng-template let-row=\"row\" let-expanded=\"expanded\" ngx-datatable-row-detail-template>\n      <div style=\"padding-left:35px;\">\n        <div><strong>オーダー詳細</strong></div>\n        <div>モエシャンドン・ロゼ、ドンペリニョン、ウィスキー、フルーツ盛り、チーズ盛り、チョコレート盛り</div>\n      </div>\n    </ng-template>\n  </ngx-datatable-row-detail>\n  <!-- Column Templates -->\n  <ngx-datatable-column\n          [width]=\"50\"\n          [resizeable]=\"false\"\n          [sortable]=\"false\"\n          [draggable]=\"false\"\n          [canAutoResize]=\"false\">\n    <ng-template let-row=\"row\" let-expanded=\"expanded\" ngx-datatable-cell-template>\n      <a\n              href=\"javascript:void(0)\"\n              [class.datatable-icon-right]=\"!expanded\"\n              [class.datatable-icon-down]=\"expanded\"\n              title=\"Expand/Collapse Row\"\n              (click)=\"toggleExpandRow(row)\">\n      </a>\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column name=\"name\" width=\"100\">\n    <ng-template ngx-datatable-header-template>\n      日付\n    </ng-template>\n    <ng-template let-row=\"row\" let-value=\"value\" ngx-datatable-cell-template>\n      {{row.entryDate}}\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column name=\"accountCast\" width=\"100\">\n    <ng-template ngx-datatable-header-template>\n      担当\n    </ng-template>\n    <ng-template let-row=\"row\" let-value=\"value\" ngx-datatable-cell-template>\n      {{row.accountCast}}\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column name=\"douhanCasts\" width=\"200\">\n    <ng-template ngx-datatable-header-template>\n      同伴\n    </ng-template>\n    <ng-template let-row=\"row\" let-value=\"value\" ngx-datatable-cell-template>\n      {{row.douhanCasts}}\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column name=\"douhanCasts\" width=\"200\">\n    <ng-template ngx-datatable-header-template>\n      指名\n    </ng-template>\n    <ng-template let-row=\"row\" let-value=\"value\" ngx-datatable-cell-template>\n      {{row.douhanCasts}}\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column name=\"total\" width=\"200\">\n    <ng-template ngx-datatable-header-template>\n      売上\n    </ng-template>\n    <ng-template let-row=\"row\" let-value=\"value\" ngx-datatable-cell-template>\n      {{row.total | number}}円 ({{row.numberOfCustomer}}名)\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column name=\"\" width=\"300\">\n    <ng-template let-row=\"row\" ngx-datatable-cell-template>\n      モエシャンドン・ロゼ、ドンペリニョン、ウィスキー、フルーツ盛り、チーズ盛り、チョコレー...\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column name=\"\" width=\"100\">\n    <ng-template let-row=\"row\" ngx-datatable-cell-template>\n      <button class=\"btn btn-sm btn-icon\" (click)=\"openHistoryDetailModal(row)\">\n        <i class=\"i-Magnifi-Glass1\"></i>\n      </button>\n    </ng-template>\n  </ngx-datatable-column>\n</ngx-datatable>"
+
+/***/ }),
+
+/***/ "./src/app/views/customers/customer-visit-history/customer-visit-history.component.scss":
+/*!**********************************************************************************************!*\
+  !*** ./src/app/views/customers/customer-visit-history/customer-visit-history.component.scss ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/views/customers/customer-visit-history/customer-visit-history.component.ts":
+/*!********************************************************************************************!*\
+  !*** ./src/app/views/customers/customer-visit-history/customer-visit-history.component.ts ***!
+  \********************************************************************************************/
+/*! exports provided: CustomerVisitHistoryComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CustomerVisitHistoryComponent", function() { return CustomerVisitHistoryComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shared_services_customer_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../shared/services/customer.service */ "./src/app/shared/services/customer.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CustomerVisitHistoryComponent = /** @class */ (function () {
+    function CustomerVisitHistoryComponent(customerService) {
+        this.customerService = customerService;
+        this.customerVisitHistoryRows = [];
+        this.expanded = {};
+    }
+    CustomerVisitHistoryComponent.prototype.ngOnInit = function () {
+        this.customerVisitHistoryRows = this.customerService.getVisitHistory();
+    };
+    CustomerVisitHistoryComponent.prototype.openHistoryDetailModal = function (row) {
+    };
+    CustomerVisitHistoryComponent.prototype.toggleExpandRow = function (row) {
+        console.log('Toggled Expand Row!', row);
+        this.table.rowDetail.toggleExpandRow(row);
+    };
+    CustomerVisitHistoryComponent.prototype.onDetailToggle = function (event) {
+        console.log('Detail Toggled', event);
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], CustomerVisitHistoryComponent.prototype, "customer", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Number)
+    ], CustomerVisitHistoryComponent.prototype, "customerId", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('customerVisitHistoryTable'),
+        __metadata("design:type", Object)
+    ], CustomerVisitHistoryComponent.prototype, "table", void 0);
+    CustomerVisitHistoryComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-customer-visit-history',
+            template: __webpack_require__(/*! ./customer-visit-history.component.html */ "./src/app/views/customers/customer-visit-history/customer-visit-history.component.html"),
+            styles: [__webpack_require__(/*! ./customer-visit-history.component.scss */ "./src/app/views/customers/customer-visit-history/customer-visit-history.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_shared_services_customer_service__WEBPACK_IMPORTED_MODULE_1__["CustomerService"]])
+    ], CustomerVisitHistoryComponent);
+    return CustomerVisitHistoryComponent;
 }());
 
 
@@ -40667,6 +40742,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _customer_details_form_customer_details_form_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./customer-details-form/customer-details-form.component */ "./src/app/views/customers/customer-details-form/customer-details-form.component.ts");
 /* harmony import */ var _page_register_customer_page_register_customer_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./page-register-customer/page-register-customer.component */ "./src/app/views/customers/page-register-customer/page-register-customer.component.ts");
 /* harmony import */ var _page_customer_details_page_customer_details_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./page-customer-details/page-customer-details.component */ "./src/app/views/customers/page-customer-details/page-customer-details.component.ts");
+/* harmony import */ var _customer_visit_history_customer_visit_history_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./customer-visit-history/customer-visit-history.component */ "./src/app/views/customers/customer-visit-history/customer-visit-history.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -40685,6 +40761,15 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+var declarations = [
+    _customer_form_customer_form_component__WEBPACK_IMPORTED_MODULE_5__["CustomerFormComponent"],
+    _customer_list_customer_list_component__WEBPACK_IMPORTED_MODULE_6__["CustomerListComponent"],
+    _customer_details_form_customer_details_form_component__WEBPACK_IMPORTED_MODULE_9__["CustomerDetailsFormComponent"],
+    _page_register_customer_page_register_customer_component__WEBPACK_IMPORTED_MODULE_10__["PageRegisterCustomerComponent"],
+    _page_customer_details_page_customer_details_component__WEBPACK_IMPORTED_MODULE_11__["PageCustomerDetailsComponent"],
+    _customer_visit_history_customer_visit_history_component__WEBPACK_IMPORTED_MODULE_12__["CustomerVisitHistoryComponent"]
+];
 var CustomersModule = /** @class */ (function () {
     function CustomersModule() {
     }
@@ -40699,7 +40784,7 @@ var CustomersModule = /** @class */ (function () {
                 _swimlane_ngx_datatable__WEBPACK_IMPORTED_MODULE_7__["NgxDatatableModule"],
                 primeng_components_table_table__WEBPACK_IMPORTED_MODULE_8__["TableModule"]
             ],
-            declarations: [_customer_form_customer_form_component__WEBPACK_IMPORTED_MODULE_5__["CustomerFormComponent"], _customer_list_customer_list_component__WEBPACK_IMPORTED_MODULE_6__["CustomerListComponent"], _customer_details_form_customer_details_form_component__WEBPACK_IMPORTED_MODULE_9__["CustomerDetailsFormComponent"], _page_register_customer_page_register_customer_component__WEBPACK_IMPORTED_MODULE_10__["PageRegisterCustomerComponent"], _page_customer_details_page_customer_details_component__WEBPACK_IMPORTED_MODULE_11__["PageCustomerDetailsComponent"]],
+            declarations: declarations,
             exports: [_customer_form_customer_form_component__WEBPACK_IMPORTED_MODULE_5__["CustomerFormComponent"]],
             entryComponents: []
         })
@@ -40718,7 +40803,7 @@ var CustomersModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"breadcrumb\">\n  <h1>{{customer.name}}様</h1>\n  <ul>\n    <li><a [routerLink]=\"['/customer-list']\">顧客一覧へ</a></li>\n    <li>顧客情報</li>\n  </ul>\n</div>\n<div class=\"separator-breadcrumb border-top\"></div>\n<div>\n  <ngb-tabset class=\"p-0\">\n    <ngb-tab title=\"基本情報\">\n      <ng-template ngbTabContent>\n        <app-customer-details-form\n                [customer]=\"customer\" [customerId]=\"customerId\"\n        ></app-customer-details-form>\n      </ng-template>\n    </ngb-tab>\n    <ngb-tab title=\"来店履歴\">\n      <ng-template ngbTabContent>\n        <p>来店履歴</p>\n      </ng-template>\n    </ngb-tab>\n  </ngb-tabset>\n</div>\n"
+module.exports = "<div class=\"breadcrumb\">\n  <h1>{{customer.name}}様</h1>\n  <ul>\n    <li><a [routerLink]=\"['/customer-list']\">顧客一覧へ</a></li>\n    <li>顧客情報</li>\n  </ul>\n</div>\n<div class=\"separator-breadcrumb border-top\"></div>\n<div>\n  <ngb-tabset class=\"p-0\">\n    <ngb-tab title=\"基本情報\">\n      <ng-template ngbTabContent>\n        <app-customer-details-form\n                [customer]=\"customer\" [customerId]=\"customerId\"\n        ></app-customer-details-form>\n      </ng-template>\n    </ngb-tab>\n    <ngb-tab title=\"来店履歴\">\n      <ng-template ngbTabContent>\n        <app-customer-visit-history\n                [customer]=\"customer\" [customerId]=\"customerId\"\n        ></app-customer-visit-history>\n      </ng-template>\n    </ngb-tab>\n  </ngb-tabset>\n</div>\n"
 
 /***/ }),
 

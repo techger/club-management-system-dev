@@ -302,9 +302,9 @@ var CastListComponent = /** @class */ (function () {
         this.router = router;
         this.modalService = modalService;
         this.columns = [
-            { field: 'name', header: 'name' },
-            { field: 'birthday', header: 'birthday' },
-            { field: 'birthplace', header: 'birthplace' },
+            { field: 'name', header: '名前' },
+            { field: 'birthday', header: '誕生日' },
+            { field: 'birthplace', header: '出身地' },
         ];
     }
     CastListComponent.prototype.ngOnInit = function () {

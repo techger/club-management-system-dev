@@ -17,7 +17,6 @@ import { FooterComponent } from '../footer/footer.component';
 import { CustomizerComponent } from '../customizer/customizer.component';
 import { SharedDirectivesModule } from '../../directives/shared-directives.module';
 import { FormsModule } from '@angular/forms';
-import {SpLayoutComponent} from "./sp-layout/sp-layout.component";
 
 const components = [
     HeaderSidebarCompactComponent,
@@ -30,7 +29,6 @@ const components = [
     AdminLayoutSidebarCompactComponent,
     AuthLayoutComponent,
     BlankLayoutComponent,
-    SpLayoutComponent
 ];
 
 @NgModule({

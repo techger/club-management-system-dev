@@ -1,0 +1,90 @@
+<ngx-datatable
+        #customerVisitHistoryTable
+        class='material expandable'
+        [columnMode]="'standard'"
+        [headerHeight]="50"
+        [footerHeight]="50"
+        [rowHeight]="50"
+        [scrollbarV]="true"
+        [rows]='customerVisitHistoryRows'
+        (page)="onPage($event)">
+
+  <!-- Row Detail Template -->
+  <ngx-datatable-row-detail [rowHeight]="100" #myDetailRow (toggle)="onDetailToggle($event)">
+    <ng-template let-row="row" let-expanded="expanded" ngx-datatable-row-detail-template>
+      <div style="padding-left:35px;">
+        <div><strong>オーダー詳細</strong></div>
+        <div>モエシャンドン・ロゼ、ドンペリニョン、ウィスキー、フルーツ盛り、チーズ盛り、チョコレート盛り</div>
+      </div>
+    </ng-template>
+  </ngx-datatable-row-detail>
+  <!-- Column Templates -->
+  <ngx-datatable-column
+          [width]="50"
+          [resizeable]="false"
+          [sortable]="false"
+          [draggable]="false"
+          [canAutoResize]="false">
+    <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+      <a
+              href="javascript:void(0)"
+              [class.datatable-icon-right]="!expanded"
+              [class.datatable-icon-down]="expanded"
+              title="Expand/Collapse Row"
+              (click)="toggleExpandRow(row)">
+      </a>
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column name="name" width="100">
+    <ng-template ngx-datatable-header-template>
+      日付
+    </ng-template>
+    <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+      {{row.entryDate}}
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column name="accountCast" width="100">
+    <ng-template ngx-datatable-header-template>
+      担当
+    </ng-template>
+    <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+      {{row.accountCast}}
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column name="douhanCasts" width="200">
+    <ng-template ngx-datatable-header-template>
+      同伴
+    </ng-template>
+    <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+      {{row.douhanCasts}}
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column name="douhanCasts" width="200">
+    <ng-template ngx-datatable-header-template>
+      指名
+    </ng-template>
+    <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+      {{row.douhanCasts}}
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column name="total" width="200">
+    <ng-template ngx-datatable-header-template>
+      売上
+    </ng-template>
+    <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+      {{row.total | number}}円 ({{row.numberOfCustomer}}名)
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column name="" width="300">
+    <ng-template let-row="row" ngx-datatable-cell-template>
+      モエシャンドン・ロゼ、ドンペリニョン、ウィスキー、フルーツ盛り、チーズ盛り、チョコレー...
+    </ng-template>
+  </ngx-datatable-column>
+  <ngx-datatable-column name="" width="100">
+    <ng-template let-row="row" ngx-datatable-cell-template>
+      <button class="btn btn-sm btn-icon" (click)="openHistoryDetailModal(row)">
+        <i class="i-Magnifi-Glass1"></i>
+      </button>
+    </ng-template>
+  </ngx-datatable-column>
+</ngx-datatable>

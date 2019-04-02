@@ -13,9 +13,9 @@ import {CastFormComponent} from "../cast-form/cast-form.component";
 export class CastListComponent implements OnInit {
     casts: Cast[];
     columns = [
-        {field: 'name', header: 'name'},
-        {field: 'birthday', header: 'birthday'},
-        {field: 'birthplace', header: 'birthplace'},
+        {field: 'name', header: '名前'},
+        {field: 'birthday', header: '誕生日'},
+        {field: 'birthplace', header: '出身地'},
     ];
 
     constructor(private castService: CastService,

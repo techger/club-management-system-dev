@@ -5,7 +5,6 @@ import {AuthGaurd} from './shared/services/auth.gaurd';
 import {BlankLayoutComponent} from './shared/components/layouts/blank-layout/blank-layout.component';
 import {AdminLayoutSidebarCompactComponent} from './shared/components/layouts/admin-layout-sidebar-compact/admin-layout-sidebar-compact.component';
 import {AdminLayoutSidebarLargeComponent} from './shared/components/layouts/admin-layout-sidebar-large/admin-layout-sidebar-large.component';
-import {SpLayoutComponent} from "./shared/components/layouts/sp-layout/sp-layout.component";
 
 const adminRoutes: Routes = [
     {
@@ -76,16 +75,6 @@ const routes: Routes = [
             {
                 path: 'sessions',
                 loadChildren: './views/sessions/sessions.module#SessionsModule'
-            }
-        ]
-    },
-    {
-        path: '',
-        component: SpLayoutComponent,
-        children: [
-            {
-                path: 'sp',
-                loadChildren: './views/sp/sp.module#SpModule'
             }
         ]
     },

@@ -17,7 +17,9 @@
     </ngb-tab>
     <ngb-tab title="来店履歴">
       <ng-template ngbTabContent>
-        <p>来店履歴</p>
+        <app-customer-visit-history
+                [customer]="customer" [customerId]="customerId"
+        ></app-customer-visit-history>
       </ng-template>
     </ngb-tab>
   </ngb-tabset>

@@ -4,21 +4,21 @@
 <div class="separator-breadcrumb border-top"></div>
 
 <div class="row mb-4">
-  <div class="col-md-6">
+  <div class="col-md-8">
     <button class="btn btn-rounded btn-primary m-1"
             (click)="addEvent()">
       <i class="i-Add text-20"></i> 同伴予定を追加
     </button>
-    <button class="btn btn-rounded btn-primary"
+    <button class="btn btn-rounded btn-primary m-1"
             (click)="registerCustomer()">
-      <i class="i-Add text-20"></i> 初同伴・初来店のお客様を登録
+      <i class="i-Add text-20"></i> 初同伴・初来店のお客様を簡易登録
     </button>
 
     <!--イベント作成ボタンを作る-->
-
-  </div>
-  <div class="col-md-4 mb-4">
-
+    <button class="btn btn-rounded btn-primary m-1"
+            (click)="registerCustomer()">
+      <i class="i-Add text-20"></i> 店舗のイベントを登録
+    </button>
   </div>
 </div>
 <div class="row">

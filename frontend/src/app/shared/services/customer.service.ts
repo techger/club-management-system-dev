@@ -12,15 +12,25 @@ export class CustomerService {
     constructor() {
     }
 
+    /**
+     * @return customer data filtered by customer ID
+     * */
     findCustomer(customerId: number) {
         const customers = this.getCustomerList();
         return customers.find(customer => customer.customerId === customerId);
     }
 
+    /**
+     * can be deleted this func
+     * */
     setCustomer() {
         return this.customer;
     }
 
+
+    /**
+     * @return [ {label: 'string', value: number}, ]
+     * */
     getCustomerOptions() {
         return [
             {label: '林', value: 1},
@@ -33,6 +43,7 @@ export class CustomerService {
             // {label: '吉田', value: {customerId: 4, name: '吉田'}},
         ]
     }
+
 
     getVisitingCustomers() {
         return [
@@ -80,62 +91,87 @@ export class CustomerService {
             {
                 "entryDate": "2019-01-10",
                 "customerName": "Dennis Giles",
+                "customerId": 2,
                 "accountCastId": 10,
+                "accountCast": 'まま',
+                "douhanCasts": 'まい、めぐみ',
                 "total": 91858,
                 "numberOfCustomer": 2
             },
             {
                 "entryDate": "2018-01-30",
                 "customerName": "Stark Walters",
+                "customerId": 2,
                 "accountCastId": 7,
+                "accountCast": 'まま',
+                "douhanCasts": 'まい、めぐみ',
                 "total": 134655,
                 "numberOfCustomer": 6
             },
             {
                 "entryDate": "2018-10-20",
                 "customerName": "Preston Ewing",
+                "customerId": 2,
                 "accountCastId": 2,
+                "accountCast": 'まま',
+                "douhanCasts": 'まい、めぐみ',
                 "total": 144161,
                 "numberOfCustomer": 6
             },
             {
                 "entryDate": "2018-10-03",
                 "customerName": "Spears Gay",
+                "customerId": 2,
                 "accountCastId": 10,
+                "accountCast": 'まま',
+                "douhanCasts": 'まい、めぐみ',
                 "total": 17939,
                 "numberOfCustomer": 5
             },
             {
                 "entryDate": "2018-12-12",
                 "customerName": "Sutton Casey",
+                "customerId": 2,
                 "accountCastId": 5,
+                "accountCast": 'まま',
+                "douhanCasts": 'まい、めぐみ',
                 "total": 180466,
                 "numberOfCustomer": 9
             },
             {
                 "entryDate": "2018-01-01",
                 "customerName": "Adrian Velazquez",
+                "customerId": 2,
                 "accountCastId": 5,
+                "accountCast": 'まま',
+                "douhanCasts": 'まい、めぐみ',
                 "total": 197505,
                 "numberOfCustomer": 8
             },
             {
                 "entryDate": "2018-08-13",
                 "customerName": "Dominique Hatfield",
+                "customerId": 2,
                 "accountCastId": 6,
+                "accountCast": 'まま',
+                "douhanCasts": 'まい、めぐみ',
                 "total": 15835,
                 "numberOfCustomer": 3
             },
             {
                 "entryDate": "2019-01-24",
                 "customerName": "Winters Alexander",
+                "customerId": 2,
                 "accountCastId": 2,
+                "accountCast": 'まま',
+                "douhanCasts": 'まい、めぐみ',
                 "total": 57639,
                 "numberOfCustomer": 1
             },
             {
                 "entryDate": "2019-02-15",
                 "customerName": "Macdonald Shannon",
+                "customerId": 2,
                 "accountCastId": 3,
                 "total": 52381,
                 "numberOfCustomer": 3
@@ -143,6 +179,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-04-09",
                 "customerName": "Eileen Mcgowan",
+                "customerId": 2,
                 "accountCastId": 3,
                 "total": 106889,
                 "numberOfCustomer": 9
@@ -150,6 +187,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-05-12",
                 "customerName": "Alexandria Whitney",
+                "customerId": 2,
                 "accountCastId": 3,
                 "total": 71867,
                 "numberOfCustomer": 2
@@ -157,6 +195,7 @@ export class CustomerService {
             {
                 "entryDate": "2019-01-06",
                 "customerName": "Annmarie Stone",
+                "customerId": 2,
                 "accountCastId": 8,
                 "total": 90498,
                 "numberOfCustomer": 7
@@ -164,6 +203,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-02-11",
                 "customerName": "Vaughn Rivas",
+                "customerId": 2,
                 "accountCastId": 2,
                 "total": 77958,
                 "numberOfCustomer": 6
@@ -171,6 +211,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-03-19",
                 "customerName": "Prince Wilkerson",
+                "customerId": 2,
                 "accountCastId": 7,
                 "total": 144808,
                 "numberOfCustomer": 4
@@ -178,6 +219,7 @@ export class CustomerService {
             {
                 "entryDate": "2019-03-14",
                 "customerName": "Pierce Ross",
+                "customerId": 2,
                 "accountCastId": 8,
                 "total": 49262,
                 "numberOfCustomer": 1
@@ -185,6 +227,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-08-22",
                 "customerName": "Alvarado Hyde",
+                "customerId": 2,
                 "accountCastId": 5,
                 "total": 89927,
                 "numberOfCustomer": 8
@@ -192,6 +235,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-10-04",
                 "customerName": "Gilbert Holden",
+                "customerId": 2,
                 "accountCastId": 8,
                 "total": 26235,
                 "numberOfCustomer": 8
@@ -199,6 +243,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-11-20",
                 "customerName": "Elva Greer",
+                "customerId": 2,
                 "accountCastId": 4,
                 "total": 159212,
                 "numberOfCustomer": 5
@@ -206,6 +251,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-05-07",
                 "customerName": "Lane Sloan",
+                "customerId": 2,
                 "accountCastId": 1,
                 "total": 170346,
                 "numberOfCustomer": 1
@@ -213,6 +259,7 @@ export class CustomerService {
             {
                 "entryDate": "2019-02-01",
                 "customerName": "Hunter Kirkland",
+                "customerId": 2,
                 "accountCastId": 4,
                 "total": 129780,
                 "numberOfCustomer": 6
@@ -220,6 +267,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-11-09",
                 "customerName": "Trudy Alvarado",
+                "customerId": 2,
                 "accountCastId": 8,
                 "total": 63217,
                 "numberOfCustomer": 9
@@ -227,6 +275,7 @@ export class CustomerService {
             {
                 "entryDate": "2019-02-08",
                 "customerName": "Carlene Glenn",
+                "customerId": 2,
                 "accountCastId": 3,
                 "total": 93956,
                 "numberOfCustomer": 4
@@ -234,6 +283,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-10-19",
                 "customerName": "Holloway Levine",
+                "customerId": 2,
                 "accountCastId": 10,
                 "total": 86051,
                 "numberOfCustomer": 4
@@ -241,6 +291,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-10-26",
                 "customerName": "Haley Mcguire",
+                "customerId": 2,
                 "accountCastId": 4,
                 "total": 188940,
                 "numberOfCustomer": 2
@@ -248,6 +299,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-03-18",
                 "customerName": "Wong Booth",
+                "customerId": 2,
                 "accountCastId": 3,
                 "total": 192445,
                 "numberOfCustomer": 8
@@ -255,6 +307,7 @@ export class CustomerService {
             {
                 "entryDate": "2019-02-28",
                 "customerName": "Ida Hunter",
+                "customerId": 2,
                 "accountCastId": 4,
                 "total": 197390,
                 "numberOfCustomer": 1
@@ -262,6 +315,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-09-03",
                 "customerName": "Darla Ruiz",
+                "customerId": 2,
                 "accountCastId": 7,
                 "total": 39134,
                 "numberOfCustomer": 5
@@ -269,6 +323,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-10-09",
                 "customerName": "Natalie Craft",
+                "customerId": 2,
                 "accountCastId": 5,
                 "total": 176723,
                 "numberOfCustomer": 10
@@ -276,6 +331,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-01-24",
                 "customerName": "Goodman Charles",
+                "customerId": 2,
                 "accountCastId": 2,
                 "total": 86979,
                 "numberOfCustomer": 9
@@ -283,6 +339,7 @@ export class CustomerService {
             {
                 "entryDate": "2019-01-30",
                 "customerName": "Dollie Harvey",
+                "customerId": 2,
                 "accountCastId": 6,
                 "total": 128596,
                 "numberOfCustomer": 10
@@ -290,6 +347,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-09-07",
                 "customerName": "Grant Hicks",
+                "customerId": 2,
                 "accountCastId": 7,
                 "total": 180077,
                 "numberOfCustomer": 7
@@ -297,6 +355,7 @@ export class CustomerService {
             {
                 "entryDate": "2019-01-01",
                 "customerName": "Guy Conner",
+                "customerId": 2,
                 "accountCastId": 7,
                 "total": 56710,
                 "numberOfCustomer": 4
@@ -304,6 +363,7 @@ export class CustomerService {
             {
                 "entryDate": "2019-03-06",
                 "customerName": "Holcomb Roman",
+                "customerId": 2,
                 "accountCastId": 3,
                 "total": 198866,
                 "numberOfCustomer": 4
@@ -311,6 +371,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-01-19",
                 "customerName": "Daniel Ferguson",
+                "customerId": 2,
                 "accountCastId": 6,
                 "total": 199210,
                 "numberOfCustomer": 10
@@ -318,6 +379,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-01-19",
                 "customerName": "Haney Patel",
+                "customerId": 2,
                 "accountCastId": 9,
                 "total": 24698,
                 "numberOfCustomer": 1
@@ -325,6 +387,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-07-07",
                 "customerName": "Rivers Berger",
+                "customerId": 2,
                 "accountCastId": 5,
                 "total": 32234,
                 "numberOfCustomer": 8
@@ -332,6 +395,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-05-24",
                 "customerName": "Greta Spencer",
+                "customerId": 2,
                 "accountCastId": 3,
                 "total": 178899,
                 "numberOfCustomer": 2
@@ -339,6 +403,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-12-02",
                 "customerName": "Clements Franks",
+                "customerId": 2,
                 "accountCastId": 3,
                 "total": 50290,
                 "numberOfCustomer": 9
@@ -346,6 +411,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-05-18",
                 "customerName": "Perkins Garcia",
+                "customerId": 2,
                 "accountCastId": 8,
                 "total": 34717,
                 "numberOfCustomer": 7
@@ -353,6 +419,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-11-22",
                 "customerName": "Petra Huber",
+                "customerId": 2,
                 "accountCastId": 9,
                 "total": 86210,
                 "numberOfCustomer": 4
@@ -360,6 +427,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-01-13",
                 "customerName": "Annie Bullock",
+                "customerId": 2,
                 "accountCastId": 10,
                 "total": 99332,
                 "numberOfCustomer": 7
@@ -367,6 +435,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-10-27",
                 "customerName": "Dickson Crane",
+                "customerId": 2,
                 "accountCastId": 8,
                 "total": 172902,
                 "numberOfCustomer": 10
@@ -374,6 +443,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-04-08",
                 "customerName": "Sofia Abbott",
+                "customerId": 2,
                 "accountCastId": 7,
                 "total": 182318,
                 "numberOfCustomer": 4
@@ -381,6 +451,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-09-02",
                 "customerName": "Hobbs Bowman",
+                "customerId": 2,
                 "accountCastId": 7,
                 "total": 131158,
                 "numberOfCustomer": 1
@@ -388,6 +459,7 @@ export class CustomerService {
             {
                 "entryDate": "2018-12-17",
                 "customerName": "Cantu Koch",
+                "customerId": 2,
                 "accountCastId": 10,
                 "total": 91733,
                 "numberOfCustomer": 5
@@ -423,9 +495,9 @@ export class CustomerService {
                 customerName: '山本様',
                 numberOfCustomer: 2,
                 accountCastId: 2,
-                douhanCastsId: [2,7,8],
+                douhanCastsId: [2, 7, 8],
                 douhanCast: 'まい',
-                calledCasts: [4,5,6],
+                calledCasts: [4, 5, 6],
                 entryDate: new Date()
             },
             {
@@ -435,7 +507,7 @@ export class CustomerService {
                 accountCastId: 3,
                 douhanCastsId: [3],
                 douhanCast: 'まお',
-                calledCasts: [7,8],
+                calledCasts: [7, 8],
                 entryDate: new Date()
             },
             {
@@ -661,9 +733,9 @@ export class CustomerService {
         return [
             {
                 "customerId": 0,
-                "name": "Roberson Beard",
+                "name": "相葉雅紀",
                 "nameKana": "Adrian Adams",
-                "company": "GUSHKOOL",
+                "company": "NIKE",
                 "client": "QUADEEBO",
                 "anniversaryOfCompany": "2014-05-01",
                 "phone": "090 (817) 414-2082",
@@ -699,9 +771,9 @@ export class CustomerService {
             },
             {
                 "customerId": 1,
-                "name": "Alexandra Love",
+                "name": "赤西仁",
                 "nameKana": "Elva Crawford",
-                "company": "SUPREMIA",
+                "company": "adidas",
                 "client": "ZANYMAX",
                 "anniversaryOfCompany": "2017-10-04",
                 "phone": "090 (925) 525-3438",
@@ -737,9 +809,9 @@ export class CustomerService {
             },
             {
                 "customerId": 2,
-                "name": "Miriam Moss",
+                "name": "浅野忠信",
                 "nameKana": "Bentley Nicholson",
-                "company": "VANTAGE",
+                "company": "Coca-Cola",
                 "client": "EARBANG",
                 "anniversaryOfCompany": "2017-07-14",
                 "phone": "090 (996) 410-3375",
@@ -775,9 +847,9 @@ export class CustomerService {
             },
             {
                 "customerId": 3,
-                "name": "Erica Dunn",
+                "name": "阿部寛",
                 "nameKana": "Lola Mccoy",
-                "company": "CUBICIDE",
+                "company": "Pepsi",
                 "client": "OBLIQ",
                 "anniversaryOfCompany": "2018-02-11",
                 "phone": "090 (903) 441-2278",
@@ -813,9 +885,9 @@ export class CustomerService {
             },
             {
                 "customerId": 4,
-                "name": "Ruth Welch",
+                "name": "綾野剛",
                 "nameKana": "Chandra Boyle",
-                "company": "NAVIR",
+                "company": "Canon",
                 "client": "MAROPTIC",
                 "anniversaryOfCompany": "2017-03-13",
                 "phone": "090 (841) 498-3933",
@@ -851,9 +923,9 @@ export class CustomerService {
             },
             {
                 "customerId": 5,
-                "name": "Bullock Hodge",
+                "name": "安藤政信",
                 "nameKana": "Meagan Ross",
-                "company": "PROSURE",
+                "company": "Nikon",
                 "client": "DIGIFAD",
                 "anniversaryOfCompany": "2014-07-04",
                 "phone": "090 (873) 404-2178",
@@ -889,9 +961,9 @@ export class CustomerService {
             },
             {
                 "customerId": 6,
-                "name": "Robertson Clay",
+                "name": "生田斗真",
                 "nameKana": "Winters Parks",
-                "company": "OPTYK",
+                "company": "Adobe",
                 "client": "PYRAMIA",
                 "anniversaryOfCompany": "2014-07-22",
                 "phone": "090 (849) 590-3940",
@@ -927,9 +999,9 @@ export class CustomerService {
             },
             {
                 "customerId": 7,
-                "name": "Abby Morrison",
+                "name": "池松壮亮",
                 "nameKana": "Liza Reeves",
-                "company": "ROCKLOGIC",
+                "company": "Amazon",
                 "client": "ENOMEN",
                 "anniversaryOfCompany": "2016-02-29",
                 "phone": "090 (878) 458-2638",
@@ -965,9 +1037,9 @@ export class CustomerService {
             },
             {
                 "customerId": 8,
-                "name": "Brooke Warren",
+                "name": "伊勢谷友介",
                 "nameKana": "Sweet Doyle",
-                "company": "XYLAR",
+                "company": "Audi",
                 "client": "KYAGORO",
                 "anniversaryOfCompany": "2018-01-29",
                 "phone": "090 (858) 479-2197",
@@ -1003,9 +1075,9 @@ export class CustomerService {
             },
             {
                 "customerId": 9,
-                "name": "Elba Murphy",
+                "name": "市川海老蔵",
                 "nameKana": "Hinton Leonard",
-                "company": "ENORMO",
+                "company": "SEGA",
                 "client": "BESTO",
                 "anniversaryOfCompany": "2015-05-31",
                 "phone": "090 (954) 418-3384",
@@ -1041,9 +1113,9 @@ export class CustomerService {
             },
             {
                 "customerId": 10,
-                "name": "Celeste Dawson",
+                "name": "市原隼人",
                 "nameKana": "Colette Pruitt",
-                "company": "SUPPORTAL",
+                "company": "Starbucks",
                 "client": "RUGSTARS",
                 "anniversaryOfCompany": "2014-10-03",
                 "phone": "090 (919) 407-2506",

@@ -35,16 +35,10 @@ export class BillFormComponent implements OnInit {
 
     ngOnInit() {
         this.billForm = this.buildBillForm(this.bill);
-
-    }
-
-    ngAfterViewInit() {
-        setTimeout(() => {
-            this.seatOptions = this.seatService.getSeatOptions();
-            this.customerOptions = this.customerService.getCustomerOptions();
-            this.castOptions = this.castService.getCastOptions();
-            this.itemOptions = this.itemService.getItemGroupOptions();
-        });
+        this.seatOptions = this.seatService.getSeatOptions();
+        this.customerOptions = this.customerService.getCustomerOptions();
+        this.castOptions = this.castService.getCastOptions();
+        this.itemOptions = this.itemService.getItemGroupOptions();
     }
 
     buildBillForm(bill: Bill = {

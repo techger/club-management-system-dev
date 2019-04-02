@@ -65423,7 +65423,7 @@ var CalendarEventDB = /** @class */ (function () {
                 customer: '林様',
                 customerId: 1,
                 numberOfCustomer: 5,
-                douhanCasts: 'めい、みか、みさと',
+                douhanCasts: 'めぐみ',
                 note: '久兵衛で待ち合わせ。21時に同伴入店予定。',
                 douhanCastsId: [1, 2, 3, 4],
                 color: this.colors.red,
@@ -65433,12 +65433,12 @@ var CalendarEventDB = /** @class */ (function () {
                 start: Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["addHours"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["startOfDay"])(new Date()), 19),
                 time: '19:00',
                 end: Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["addHours"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["startOfDay"])(new Date()), 21),
-                title: 'みなみ 山本様同伴',
-                customer: '林様',
+                title: 'まい 山本様同伴',
+                customer: '山本様',
                 customerId: 1,
                 numberOfCustomer: 5,
-                mainCast: 'まま',
-                douhanCasts: 'めい、みか、みさと',
+                mainCast: 'まい',
+                douhanCasts: 'まい',
                 douhanCastsId: [1, 2, 3, 4],
                 note: '',
                 color: this.colors.blue,
@@ -65446,14 +65446,14 @@ var CalendarEventDB = /** @class */ (function () {
             }, {
                 _id: '102',
                 start: Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["addHours"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["startOfDay"])(new Date()), 19),
-                time: '19:00',
+                time: '20:00',
                 end: Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["addHours"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["startOfDay"])(new Date()), 21),
                 title: 'まみ 田中様同伴',
-                customer: '林様',
+                customer: '田中様',
                 customerId: 1,
                 numberOfCustomer: 5,
-                mainCast: 'まま',
-                douhanCasts: 'めい、みか、みさと',
+                mainCast: 'まみ',
+                douhanCasts: 'まみ',
                 douhanCastsId: [1, 2, 3, 4],
                 note: '',
                 color: this.colors.red,
@@ -65461,14 +65461,14 @@ var CalendarEventDB = /** @class */ (function () {
             }, {
                 _id: '103',
                 start: Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["addHours"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["startOfDay"])(new Date()), 20),
-                time: '19:00',
+                time: '20:00',
                 end: Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["addHours"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["startOfDay"])(new Date()), 22),
                 title: 'みずき 吉田様同伴',
-                customer: '林様',
+                customer: '吉田様',
                 customerId: 1,
                 numberOfCustomer: 5,
-                mainCast: 'まま',
-                douhanCasts: 'めい、みか、みさと',
+                mainCast: 'みずき',
+                douhanCasts: 'みずき',
                 douhanCastsId: [1, 2, 3, 4],
                 note: '',
                 color: this.colors.blue,
@@ -65482,14 +65482,14 @@ var CalendarEventDB = /** @class */ (function () {
             {
                 _id: '104',
                 start: Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["addHours"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["subDays"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["startOfDay"])(new Date()), 1), 19),
-                time: '19:00',
+                time: '20:30',
                 end: Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["addHours"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["subDays"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["startOfDay"])(new Date()), 1), 21),
-                title: 'みれい 林様同伴',
-                customer: '林様',
+                title: 'みれい 小林様同伴',
+                customer: '小林様',
                 customerId: 1,
                 numberOfCustomer: 5,
-                mainCast: 'まま',
-                douhanCasts: 'めい、みか、みさと',
+                mainCast: 'みれい',
+                douhanCasts: 'みれい',
                 douhanCastsId: [1, 2, 3, 4],
                 note: '',
                 color: this.colors.red,
@@ -65497,14 +65497,14 @@ var CalendarEventDB = /** @class */ (function () {
             }, {
                 _id: '105',
                 start: Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["addHours"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["subDays"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["startOfDay"])(new Date()), 2), 19),
-                time: '19:00',
+                time: '20:30',
                 end: Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["addHours"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["subDays"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["startOfDay"])(new Date()), 2), 21),
-                title: 'みさ 山本様同伴',
-                customer: '林様',
+                title: 'みさ 山田様同伴',
+                customer: '山田様',
                 customerId: 1,
                 numberOfCustomer: 5,
-                mainCast: 'まま',
-                douhanCasts: 'めい、みか、みさと',
+                mainCast: 'みさ',
+                douhanCasts: 'みさ',
                 douhanCastsId: [1, 2, 3, 4],
                 note: '',
                 color: this.colors.blue,
@@ -65515,11 +65515,11 @@ var CalendarEventDB = /** @class */ (function () {
                 time: '19:00',
                 end: Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["addHours"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["subDays"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_0__["startOfDay"])(new Date()), 3), 21),
                 title: 'みゆき 田中様同伴',
-                customer: '林様',
+                customer: '田中様',
                 customerId: 1,
                 numberOfCustomer: 5,
-                mainCast: 'まま',
-                douhanCasts: 'めい、みか、みさと',
+                mainCast: 'みゆき',
+                douhanCasts: 'みゆき',
                 douhanCastsId: [1, 2, 3, 4],
                 note: '',
                 color: this.colors.bule,
@@ -66203,7 +66203,7 @@ var CalendarAppModule = /** @class */ (function () {
                 primeng_components_multiselect_multiselect__WEBPACK_IMPORTED_MODULE_20__["MultiSelectModule"],
             ],
             declarations: [_calendar_calendar_component__WEBPACK_IMPORTED_MODULE_6__["CalendarComponent"], _calendar_form_dialog_calendar_form_dialog_component__WEBPACK_IMPORTED_MODULE_7__["CalendarFormDialogComponent"], _task_form_task_form_component__WEBPACK_IMPORTED_MODULE_10__["TaskFormComponent"], _day_task_datatable_day_task_datatable_component__WEBPACK_IMPORTED_MODULE_18__["DayTaskDatatableComponent"]],
-            entryComponents: [_calendar_form_dialog_calendar_form_dialog_component__WEBPACK_IMPORTED_MODULE_7__["CalendarFormDialogComponent"], _task_form_task_form_component__WEBPACK_IMPORTED_MODULE_10__["TaskFormComponent"], _customers_customer_form_customer_form_component__WEBPACK_IMPORTED_MODULE_15__["CustomerFormComponent"]]
+            entryComponents: [_calendar_form_dialog_calendar_form_dialog_component__WEBPACK_IMPORTED_MODULE_7__["CalendarFormDialogComponent"], _task_form_task_form_component__WEBPACK_IMPORTED_MODULE_10__["TaskFormComponent"], _customers_customer_form_customer_form_component__WEBPACK_IMPORTED_MODULE_15__["CustomerFormComponent"]],
         })
     ], CalendarAppModule);
     return CalendarAppModule;
@@ -66220,7 +66220,7 @@ var CalendarAppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"breadcrumb\">\n  <h1>カレンダー</h1>\n</div>\n<div class=\"separator-breadcrumb border-top\"></div>\n\n<div class=\"row\">\n  <div class=\"col-md-2 mb-4\">\n    <button class=\"btn btn-rounded btn-primary\" (click)=\"addEvent()\"><i class=\"i-Add text-20\"></i> 同伴予定を追加</button>\n  </div>\n  <div class=\"col-md-4 mb-4\">\n    <button class=\"btn btn-rounded btn-primary\" (click)=\"registerCustomer()\"><i class=\"i-Add text-20\"></i> 初同伴・初来店のお客様を登録\n    </button>\n  </div>\n</div>\n<div class=\"row\">\n  <div class=\"col-md-12\">\n    <div class=\"card mb-4\">\n      <div class=\"\">\n        <div class=\"p-3 d-flex justify-content-between align-items-center calendar-title\">\n          <!-- Arrow navigations -->\n          <div class=\"cal-top-col text-center\">\n            <button\n                    class=\"btn btn-rounded btn-icon btn-outline-primary m-1\"\n                    mwlCalendarPreviousView\n                    [view]=\"view\"\n                    [(viewDate)]=\"viewDate\">\n              <i class=\"i-Arrow-Left\"></i>\n            </button>\n            <button\n                    class=\"btn btn-rounded btn-icon btn-primary m-1\"\n                    mwlCalendarToday\n                    [(viewDate)]=\"viewDate\">\n              <i class=\"i-Calendar-2\"></i>\n            </button>\n            <button\n                    class=\"btn btn-rounded btn-icon btn-outline-primary m-1\"\n                    mwlCalendarNextView\n                    [view]=\"view\"\n                    [(viewDate)]=\"viewDate\">\n              <i class=\"i-Arrow-Right\"></i>\n            </button>\n          </div>\n\n          <!-- Date title -->\n          <div class=\" text-center\">\n            <h5 class=\"m-0 text-muted font-weight-bold\">{{ viewDate | calendarDate:(view + 'ViewTitle'):locale }}</h5>\n          </div>\n\n          <!-- Month, day, week view toggle buttons -->\n          <div class=\"d-flex justify-content-center\">\n            <button\n                    class=\"btn btn-rounded btn-icon btn-primary m-1\"\n                    (click)=\"view = 'month'\"\n                    [class.active]=\"view === 'month'\"\n                    ngbTooltip=\"月表示\">\n              <i class=\"i-Calendar\"></i>\n            </button>\n            <!--<button-->\n            <!--class=\"btn btn-rounded btn-icon btn-primary m-1\"-->\n            <!--(click)=\"view = 'week'\"-->\n            <!--[class.active]=\"view === 'week'\"-->\n            <!--ngbTooltip=\"週表示\">-->\n            <!--<i class=\"i-Split-Vertical-2\"></i>-->\n            <!--</button>-->\n            <button\n                    class=\"btn btn-rounded btn-icon btn-primary m-1\"\n                    (click)=\"view = 'day'\"\n                    [class.active]=\"view === 'day'\"\n                    ngbTooltip=\"日表示\">\n              <i class=\"i-Align-Justify-All\"></i>\n            </button>\n          </div>\n        </div>\n        <!-- <mat-divider></mat-divider> -->\n      </div>\n\n      <!-- Calendar -->\n      <div class=\"p-0\">\n        <div [ngSwitch]=\"view\">\n          <mwl-calendar-month-view\n                  *ngSwitchCase=\"'month'\"\n                  [viewDate]=\"viewDate\"\n                  [events]=\"events\"\n                  [refresh]=\"refresh\"\n                  [activeDayIsOpen]=\"activeDayIsOpen\"\n                  (dayClicked)=\"dayClicked($event.day)\"\n                  (eventClicked)=\"handleTask('edit', $event.event)\"\n                  (eventTimesChanged)=\"eventTimesChanged($event)\"\n                  [cellTemplate]=\"customCellTemplate\">\n          </mwl-calendar-month-view>\n          <mwl-calendar-week-view\n                  *ngSwitchCase=\"'week'\"\n                  [viewDate]=\"viewDate\"\n                  [events]=\"events\"\n                  [refresh]=\"refresh\"\n                  (eventClicked)=\"handleTask('edit', $event.event)\"\n                  (eventTimesChanged)=\"eventTimesChanged($event)\">\n          </mwl-calendar-week-view>\n          <!--<mwl-calendar-day-view-->\n          <!--*ngSwitchCase=\"'day'\"-->\n          <!--[viewDate]=\"viewDate\"-->\n          <!--[events]=\"events\"-->\n          <!--[refresh]=\"refresh\"-->\n          <!--(eventClicked)=\"handleTask('edit', $event.event)\"-->\n          <!--(eventTimesChanged)=\"eventTimesChanged($event)\"-->\n          <!--[dayStartHour]=\"15\">-->\n          <!--</mwl-calendar-day-view>-->\n          <div *ngSwitchCase=\"'day'\">\n            <app-day-task-datatable [events]=\"events\"></app-day-task-datatable>\n          </div>\n        </div>\n      </div>\n    </div>\n    <ng-template #eventDeleteConfirm let-modal>\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\" id=\"modal-title\">予定を削除しますか？</h4>\n        <button type=\"button\" class=\"close\" aria-label=\"Close button\" aria-describedby=\"modal-title\"\n                (click)=\"modal.dismiss('Cross click')\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n      </div>\n\n      <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-rounded btn-outline-secondary\" (click)=\"modal.dismiss('cancel')\">いいえ\n        </button>\n        <button type=\"button\" ngbAutofocus class=\"btn btn-rounded btn-danger\" (click)=\"modal.close('Ok')\">はい</button>\n      </div>\n    </ng-template>\n    <ng-template #customCellTemplate let-day=\"day\">\n      <div class=\"cal-cell-top\">\n        <span class=\"cal-day-number\">{{ day.date | calendarDate:'monthViewDayNumber':locale }}</span>\n        <span class=\"text-10 ml-1\">2,000,000円</span><br>\n        <span class=\"text-10 ml-1\">20組 ｜ 30名</span><br>\n      </div>\n      <div class=\"cal-cell-row pb-1\">\n        <span class=\"cal-day-badge\" *ngIf=\"day.badgeTotal > 0\">{{ day.badgeTotal }}</span>\n      </div>\n      <!--<div *ngFor=\"let event of day.events\">-->\n        <!--<p class=\"mb-0\">-->\n          <!--<button type=\"button\" class=\"btn btn-outline-{{event.btn}} m-1 btn-sm\"-->\n                  <!--(click)=\"handleTask('edit', event)\">-->\n            <!--{{event.title}}-->\n          <!--</button>-->\n        <!--</p>-->\n      <!--</div>-->\n    </ng-template>\n  </div>\n</div>\n"
+module.exports = "<div class=\"breadcrumb\">\n  <h1>カレンダー</h1>\n</div>\n<div class=\"separator-breadcrumb border-top\"></div>\n\n<div class=\"row mb-4\">\n  <div class=\"col-md-8\">\n    <button class=\"btn btn-rounded btn-primary m-1\"\n            (click)=\"addEvent()\">\n      <i class=\"i-Add text-20\"></i> 同伴予定を追加\n    </button>\n    <button class=\"btn btn-rounded btn-primary m-1\"\n            (click)=\"registerCustomer()\">\n      <i class=\"i-Add text-20\"></i> 初同伴・初来店のお客様を簡易登録\n    </button>\n\n    <!--イベント作成ボタンを作る-->\n    <button class=\"btn btn-rounded btn-primary m-1\"\n            (click)=\"registerCustomer()\">\n      <i class=\"i-Add text-20\"></i> 店舗のイベントを登録\n    </button>\n  </div>\n</div>\n<div class=\"row\">\n  <div class=\"col-md-12\">\n    <div class=\"card mb-4\">\n      <div class=\"\">\n        <div class=\"p-3 d-flex justify-content-between align-items-center calendar-title\">\n          <!-- Arrow navigations -->\n          <div class=\"cal-top-col text-center\">\n            <button\n                    class=\"btn btn-rounded btn-icon btn-outline-primary m-1\"\n                    mwlCalendarPreviousView\n                    [view]=\"view\"\n                    [(viewDate)]=\"viewDate\">\n              <i class=\"i-Arrow-Left\"></i>\n            </button>\n            <button\n                    class=\"btn btn-rounded btn-icon btn-primary m-1\"\n                    mwlCalendarToday\n                    [(viewDate)]=\"viewDate\">\n              <i class=\"i-Calendar-2\"></i>\n            </button>\n            <button\n                    class=\"btn btn-rounded btn-icon btn-outline-primary m-1\"\n                    mwlCalendarNextView\n                    [view]=\"view\"\n                    [(viewDate)]=\"viewDate\">\n              <i class=\"i-Arrow-Right\"></i>\n            </button>\n          </div>\n\n          <!-- Date title -->\n          <div class=\" text-center\">\n            <h5 class=\"m-0 text-muted font-weight-bold\">{{ viewDate | calendarDate:(view + 'ViewTitle'):locale }}</h5>\n          </div>\n\n          <!-- Month, day, week view toggle buttons -->\n          <div class=\"d-flex justify-content-center\">\n            <button\n                    class=\"btn btn-rounded btn-icon btn-primary m-1\"\n                    (click)=\"view = 'month'\"\n                    [class.active]=\"view === 'month'\"\n                    ngbTooltip=\"月表示\">\n              <i class=\"i-Calendar\"></i>\n            </button>\n            <!--<button-->\n            <!--class=\"btn btn-rounded btn-icon btn-primary m-1\"-->\n            <!--(click)=\"view = 'week'\"-->\n            <!--[class.active]=\"view === 'week'\"-->\n            <!--ngbTooltip=\"週表示\">-->\n            <!--<i class=\"i-Split-Vertical-2\"></i>-->\n            <!--</button>-->\n            <button\n                    class=\"btn btn-rounded btn-icon btn-primary m-1\"\n                    (click)=\"view = 'day'\"\n                    [class.active]=\"view === 'day'\"\n                    ngbTooltip=\"日表示\">\n              <i class=\"i-Align-Justify-All\"></i>\n            </button>\n          </div>\n        </div>\n        <!-- <mat-divider></mat-divider> -->\n      </div>\n\n      <!-- Calendar -->\n      <div class=\"p-0\">\n        <div [ngSwitch]=\"view\">\n          <mwl-calendar-month-view\n                  *ngSwitchCase=\"'month'\"\n                  [viewDate]=\"viewDate\"\n                  [events]=\"events\"\n                  [refresh]=\"refresh\"\n                  [activeDayIsOpen]=\"activeDayIsOpen\"\n                  (dayClicked)=\"dayClicked($event.day)\"\n                  (eventClicked)=\"handleTask('edit', $event.event)\"\n                  (eventTimesChanged)=\"eventTimesChanged($event)\"\n                  [cellTemplate]=\"customCellTemplate\">\n          </mwl-calendar-month-view>\n          <mwl-calendar-week-view\n                  *ngSwitchCase=\"'week'\"\n                  [viewDate]=\"viewDate\"\n                  [events]=\"events\"\n                  [refresh]=\"refresh\"\n                  (eventClicked)=\"handleTask('edit', $event.event)\"\n                  (eventTimesChanged)=\"eventTimesChanged($event)\">\n          </mwl-calendar-week-view>\n          <!--<mwl-calendar-day-view-->\n          <!--*ngSwitchCase=\"'day'\"-->\n          <!--[viewDate]=\"viewDate\"-->\n          <!--[events]=\"events\"-->\n          <!--[refresh]=\"refresh\"-->\n          <!--(eventClicked)=\"handleTask('edit', $event.event)\"-->\n          <!--(eventTimesChanged)=\"eventTimesChanged($event)\"-->\n          <!--[dayStartHour]=\"15\">-->\n          <!--</mwl-calendar-day-view>-->\n          <div *ngSwitchCase=\"'day'\">\n            <app-day-task-datatable [events]=\"events\"></app-day-task-datatable>\n          </div>\n        </div>\n      </div>\n    </div>\n    <ng-template #eventDeleteConfirm let-modal>\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title\" id=\"modal-title\">予定を削除しますか？</h4>\n        <button type=\"button\" class=\"close\" aria-label=\"Close button\" aria-describedby=\"modal-title\"\n                (click)=\"modal.dismiss('Cross click')\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n      </div>\n\n      <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-rounded btn-outline-secondary\" (click)=\"modal.dismiss('cancel')\">いいえ\n        </button>\n        <button type=\"button\" ngbAutofocus class=\"btn btn-rounded btn-danger\" (click)=\"modal.close('Ok')\">はい</button>\n      </div>\n    </ng-template>\n    <ng-template #customCellTemplate let-day=\"day\">\n      <div class=\"cal-cell-top\">\n        <span class=\"cal-day-number\">{{ day.date | calendarDate:'monthViewDayNumber':locale }}</span>\n        <span class=\"text-10 ml-1\">2,000,000円</span><br>\n        <span class=\"text-10 ml-1\">20組 ｜ 30名</span><br>\n      </div>\n      <div class=\"cal-cell-row pb-1\">\n        <span class=\"cal-day-badge\" *ngIf=\"day.badgeTotal > 0\">{{ day.badgeTotal }}</span>\n      </div>\n      <!--<div *ngFor=\"let event of day.events\">-->\n      <!--<p class=\"mb-0\">-->\n      <!--<button type=\"button\" class=\"btn btn-outline-{{event.btn}} m-1 btn-sm\"-->\n      <!--(click)=\"handleTask('edit', event)\">-->\n      <!--{{event.title}}-->\n      <!--</button>-->\n      <!--</p>-->\n      <!--</div>-->\n    </ng-template>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -66451,7 +66451,7 @@ var CalendarComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ngx-datatable\n        class=\"material\"\n        [rows]=\"events\"\n        [columnMode]=\"'flex'\"\n        [rowHeight]=\"50\"\n        (select)=\"onSelect($event)\"\n        >\n  <ngx-datatable-column name=\"time\" [flexGrow]=\"1\">\n    <ng-template let-column=\"column\" ngx-datatable-header-template>\n      時刻\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column name=\"customer\" [flexGrow]=\"1\">\n    <ng-template let-column=\"column\" ngx-datatable-header-template>\n      お客様\n    </ng-template>\n    <ng-template let-row=\"row\" let-value=\"value\" ngx-datatable-cell-template>\n      {{value}} ({{row.numberOfCustomer}}名)\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column name=\"mainCast\" [flexGrow]=\"1\">\n    <ng-template let-column=\"column\" ngx-datatable-header-template>\n      担当\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column name=\"douhanCasts\" [flexGrow]=\"2\">\n    <ng-template let-column=\"column\" ngx-datatable-header-template>\n      同伴キャスト\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column name=\"note\" [flexGrow]=\"3\">\n    <ng-template let-column=\"column\" ngx-datatable-header-template>\n      備考\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column [flexGrow]=\"1\">\n    <ng-template lew-row=\"row\" ngx-datatable-cell-template>\n      <button type=\"button\" class=\"btn btn-sm btn-outline-primary\">\n        <i class=\"i-Pen-4\"></i>\n      </button>\n      <button type=\"button\" class=\"btn btn-sm btn-outline-danger ml-1\">\n        <i class=\"i-Close\"></i>\n      </button>\n    </ng-template>\n  </ngx-datatable-column>\n</ngx-datatable>"
+module.exports = "<ngx-datatable\n        class=\"material\"\n        [rows]=\"events\"\n        [columnMode]=\"'flex'\"\n        [rowHeight]=\"50\"\n        (select)=\"onSelect($event)\"\n        >\n  <ngx-datatable-column name=\"time\" [flexGrow]=\"1\">\n    <ng-template let-column=\"column\" ngx-datatable-header-template>\n      待ち合わせ時刻\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column name=\"customer\" [flexGrow]=\"1\">\n    <ng-template let-column=\"column\" ngx-datatable-header-template>\n      お客様\n    </ng-template>\n    <ng-template let-row=\"row\" let-value=\"value\" ngx-datatable-cell-template>\n      {{value}} ({{row.numberOfCustomer}}名)\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column name=\"mainCast\" [flexGrow]=\"1\">\n    <ng-template let-column=\"column\" ngx-datatable-header-template>\n      担当\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column name=\"douhanCasts\" [flexGrow]=\"2\">\n    <ng-template let-column=\"column\" ngx-datatable-header-template>\n      同伴キャスト\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column name=\"note\" [flexGrow]=\"3\">\n    <ng-template let-column=\"column\" ngx-datatable-header-template>\n      備考\n    </ng-template>\n  </ngx-datatable-column>\n  <ngx-datatable-column [flexGrow]=\"1\">\n    <ng-template lew-row=\"row\" ngx-datatable-cell-template>\n      <button type=\"button\" class=\"btn btn-sm btn-outline-primary\">\n        <i class=\"i-Pen-4\"></i>\n      </button>\n      <button type=\"button\" class=\"btn btn-sm btn-outline-danger ml-1\">\n        <i class=\"i-Close\"></i>\n      </button>\n    </ng-template>\n  </ngx-datatable-column>\n</ngx-datatable>"
 
 /***/ }),
 
